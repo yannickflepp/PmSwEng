@@ -22,6 +22,7 @@ class Ui_BerechnungRL
 public:
     QLabel *label;
     QPushButton *pushButton;
+    QLabel *label_2;
 
     void setupUi(QWidget *BerechnungRL)
     {
@@ -34,6 +35,11 @@ public:
         pushButton = new QPushButton(BerechnungRL);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setGeometry(QRect(450, 350, 89, 25));
+        label_2 = new QLabel(BerechnungRL);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(20, 30, 231, 341));
+        label_2->setPixmap(QPixmap(QString::fromUtf8("04c2e8bd-5c5b-417a-a5b0-46e211c9ddb8.png")));
+        label_2->setScaledContents(true);
 
         retranslateUi(BerechnungRL);
         QObject::connect(pushButton, SIGNAL(pressed()), BerechnungRL, SLOT(close()));
@@ -46,6 +52,7 @@ public:
         BerechnungRL->setWindowTitle(QCoreApplication::translate("BerechnungRL", "Form", nullptr));
         label->setText(QCoreApplication::translate("BerechnungRL", "RL_Berechnung", nullptr));
         pushButton->setText(QCoreApplication::translate("BerechnungRL", "close", nullptr));
+        label_2->setText(QString());
     } // retranslateUi
 
 };
