@@ -52,7 +52,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../build-CalcApplication-Desktop_Qt_5_15_2_GCC_64bit-Debug/04c2e8bd-5c5b-417a-a5b0-46e211c9ddb8.png</pixmap>
+    <pixmap>pictures/RL.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>

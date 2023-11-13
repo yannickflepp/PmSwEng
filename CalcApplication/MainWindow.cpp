@@ -7,8 +7,7 @@ MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
   ui->setupUi(this);
-  connect(ui->pushButton, &QPushButton::pressed, this,
-          &MainWindow::onPbPressed);
+  connect(ui->buttonRC, &QPushButton::pressed, this, &MainWindow::onPbPressed);
 }
 
 MainWindow::~MainWindow()

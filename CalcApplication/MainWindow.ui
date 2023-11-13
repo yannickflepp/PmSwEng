@@ -19,7 +19,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="buttonRC">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -29,17 +29,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>calc1</string>
-    </property>
-   </widget>
-   <widget class="QGraphicsView" name="graphicsView">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>70</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
+     <string>calc_RC</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -55,7 +45,7 @@
      <string>Electronics Calculator</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="buttonRL">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -65,20 +55,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>calc2</string>
+     <string>calc_RL</string>
     </property>
    </widget>
-   <widget class="QGraphicsView" name="graphicsView_2">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>70</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="buttonRLC">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -88,20 +68,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>calc2</string>
+     <string>calc_RLC</string>
     </property>
    </widget>
-   <widget class="QGraphicsView" name="graphicsView_3">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>70</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="buttonClose">
     <property name="geometry">
      <rect>
       <x>480</x>
@@ -112,6 +82,63 @@
     </property>
     <property name="text">
      <string>close</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_RC">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>160</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>pictures/RC.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_RL">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>70</y>
+      <width>160</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>pictures/RL.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_RLC">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>70</y>
+      <width>160</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>pictures/RLC.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
@@ -130,7 +157,7 @@
  <resources/>
  <connections>
   <connection>
-   <sender>pushButton_4</sender>
+   <sender>buttonClose</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>close()</slot>
