@@ -7,13 +7,13 @@
     <x>0</x>
     <y>0</y>
     <width>600</width>
-    <height>400</height>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="title">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -30,7 +30,7 @@
    <property name="geometry">
     <rect>
      <x>450</x>
-     <y>350</y>
+     <y>450</y>
      <width>89</width>
      <height>25</height>
     </rect>
@@ -39,23 +39,133 @@
     <string>close</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="pictureRL">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>30</y>
-     <width>231</width>
-     <height>341</height>
+     <x>320</x>
+     <y>35</y>
+     <width>250</width>
+     <height>160</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="Res.qrc">:/res/pictures/RC.png</pixmap>
+    <pixmap resource="Res.qrc">:/res/pictures/RL.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spannungTxt">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Spannung U [V]</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="frequenzTxt">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Frequenz f [Hz]</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="widerstandTxt">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Widerstand R [Ohm]</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="induktivitaetTxt">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Induktivität L [H]</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="eingabeTxt">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Eingabeparameter:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="spannungIn">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>80</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="frequenzIn">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>110</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="widerstandIn">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>140</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="induktivitaet">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>170</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
    </property>
   </widget>
  </widget>
