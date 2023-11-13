@@ -52,14 +52,16 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>pictures/RL.png</pixmap>
+    <pixmap resource="Res.qrc">:/res/pictures/RC.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="Res.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>pushButton</sender>

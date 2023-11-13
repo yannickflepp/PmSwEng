@@ -116,7 +116,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>pictures/RL.png</pixmap>
+     <pixmap resource="Res.qrc">:/res/pictures/RL.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -135,7 +135,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>pictures/RLC.png</pixmap>
+     <pixmap resource="Res.qrc">:/res/pictures/RLC.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -148,7 +148,7 @@
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>22</height>
+     <height>24</height>
     </rect>
    </property>
   </widget>
