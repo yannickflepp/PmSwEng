@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 #include <QWidget>
-#include "QDebug"
 #include "ui_BerechnungRL.h"
 
 QT_BEGIN_NAMESPACE
