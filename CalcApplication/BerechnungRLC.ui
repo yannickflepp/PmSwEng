@@ -789,7 +789,7 @@
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QLineEdit" name="induktivitaetIn_2">
+  <widget class="QLineEdit" name="kapazitaetIn">
    <property name="geometry">
     <rect>
      <x>180</x>

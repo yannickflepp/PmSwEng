@@ -19,6 +19,7 @@ SOURCES += \
     BerechnungRC.cpp \
     BerechnungRL.cpp \
     BerechnungRLC.cpp \
+    Error.cpp \
     main.cpp \
     MainWindow.cpp
 
@@ -26,6 +27,7 @@ HEADERS += \
     BerechnungRC.h \
     BerechnungRL.h \
     BerechnungRLC.h \
+    Error.h \
     MainWindow.h
 
 FORMS += \

@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QWidget>
+#include "Error.h"
 #include "ui_BerechnungRL.h"
 
 QT_BEGIN_NAMESPACE
@@ -19,14 +20,20 @@ class BerechnungRL : public QWidget
  public:
   BerechnungRL(QWidget* parent = nullptr);
   ~BerechnungRL();
+  Error error;
 
  private slots:
   void onPbPressed()
   {
-    double spannung = (ui->spannungIn->text()).toDouble();
-    double frequenz = (ui->frequenzIn->text()).toDouble();
-    double widerstand = (ui->widerstandIn->text()).toDouble();
-    double induktivitaet = (ui->induktivitaetIn->text()).toDouble();
+    bool ok = false;
+    double spannung = (ui->spannungIn->text()).toDouble(&ok);
+    double frequenz = (ui->frequenzIn->text()).toDouble(&ok);
+    double widerstand = (ui->widerstandIn->text()).toDouble(&ok);
+    double induktivitaet = (ui->induktivitaetIn->text()).toDouble(&ok);
+    if (ok == false)
+    {
+      error.show();
+    }
     ui->stromOut->setText(QString::number(spannung / 2, 'f', 5));
     ui->impedanzOut->setText(QString::number(frequenz / 2, 'f', 5));
     ui->phasenwinkelOut->setText(QString::number(induktivitaet / 2, 'f', 5));
