@@ -1,24 +1,24 @@
-#ifndef BERECHNUNGRC_H
-#define BERECHNUNGRC_H
+#ifndef BERECHNUNGRLC_H
+#define BERECHNUNGRLC_H
 
 #include <QMainWindow>
 #include <QWidget>
-#include "ui_BerechnungRC.h"
+#include "ui_BerechnungRLC.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui
 {
-class BerechnungRC;
+class BerechnungRLC;
 }
 QT_END_NAMESPACE
 
-class BerechnungRC : public QWidget
+class BerechnungRLC : public QWidget
 {
   Q_OBJECT
 
  public:
-  BerechnungRC(QWidget* parent = nullptr);
-  ~BerechnungRC();
+  BerechnungRLC(QWidget* parent = nullptr);
+  ~BerechnungRLC();
 
  private slots:
   void onPbPressed()
@@ -35,7 +35,7 @@ class BerechnungRC : public QWidget
   }
 
  private:
-  Ui::BerechnungRC* ui;
+  Ui::BerechnungRLC* ui;
 };
 
 #endif  // BERECHNUNGRL_H

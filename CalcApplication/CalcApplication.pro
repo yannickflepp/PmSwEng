@@ -18,17 +18,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     BerechnungRC.cpp \
     BerechnungRL.cpp \
+    BerechnungRLC.cpp \
     main.cpp \
     MainWindow.cpp
 
 HEADERS += \
     BerechnungRC.h \
     BerechnungRL.h \
+    BerechnungRLC.h \
     MainWindow.h
 
 FORMS += \
     BerechnungRC.ui \
     BerechnungRL.ui \
+    BerechnungRLC.ui \
+    Error.ui \
     MainWindow.ui
 
 # Default rules for deployment.

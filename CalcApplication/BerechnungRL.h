@@ -23,11 +23,16 @@ class BerechnungRL : public QWidget
  private slots:
   void onPbPressed()
   {
-    QString spannung = ui->spannungIn->text();
-    QString frequenz = ui->frequenzIn->text();
-    QString widerstand = ui->widerstandIn->text();
-    QString induktivitaet = ui->induktivitaetIn->text();
-    ui->stromOut->setText(spannung);
+    double spannung = (ui->spannungIn->text()).toDouble();
+    double frequenz = (ui->frequenzIn->text()).toDouble();
+    double widerstand = (ui->widerstandIn->text()).toDouble();
+    double induktivitaet = (ui->induktivitaetIn->text()).toDouble();
+    ui->stromOut->setText(QString::number(spannung / 2, 'f', 5));
+    ui->impedanzOut->setText(QString::number(frequenz / 2, 'f', 5));
+    ui->phasenwinkelOut->setText(QString::number(induktivitaet / 2, 'f', 5));
+    ui->leistungOut->setText(QString::number(widerstand / 2, 'f', 5));
+    ui->blindleistungOut->setText(QString::number(spannung / 2, 'f', 5));
+    ui->scheinleistungOut->setText(QString::number(spannung / 2, 'f', 5));
   }
 
  private:
