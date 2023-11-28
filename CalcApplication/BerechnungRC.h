@@ -34,12 +34,19 @@ class BerechnungRC : public QWidget
     {
       error.show();
     }
-    ui->stromOut->setText(QString::number(spannung / 2, 'f', 5));
-    ui->impedanzOut->setText(QString::number(frequenz / 2, 'f', 5));
-    ui->phasenwinkelOut->setText(QString::number(induktivitaet / 2, 'f', 5));
-    ui->leistungOut->setText(QString::number(widerstand / 2, 'f', 5));
-    ui->blindleistungOut->setText(QString::number(spannung / 2, 'f', 5));
-    ui->scheinleistungOut->setText(QString::number(spannung / 2, 'f', 5));
+    double strom = 0;
+    double impedanz = 0;
+    double phasenwinkel = 0;
+    double leistung = 0;
+    double blindleistung = 0;
+    double scheinleistung = 0;
+
+    ui->stromOut->setText(QString::number(strom, 'f', 2));
+    ui->impedanzOut->setText(QString::number(impedanz, 'f', 2));
+    ui->phasenwinkelOut->setText(QString::number(phasenwinkel, 'f', 2));
+    ui->leistungOut->setText(QString::number(leistung, 'f', 2));
+    ui->blindleistungOut->setText(QString::number(blindleistung, 'f', 2));
+    ui->scheinleistungOut->setText(QString::number(scheinleistung, 'f', 2));
   }
 
  private:

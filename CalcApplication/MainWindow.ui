@@ -43,6 +43,7 @@
     </property>
     <property name="font">
      <font>
+      <family>Ubuntu</family>
       <pointsize>24</pointsize>
      </font>
     </property>
