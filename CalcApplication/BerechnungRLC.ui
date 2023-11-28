@@ -28,26 +28,26 @@
     </font>
    </property>
    <property name="text">
-    <string>RLC_Berechnung</string>
+    <string>RLC Berechnung</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>550</x>
+     <x>572</x>
      <y>450</y>
      <width>89</width>
      <height>25</height>
     </rect>
    </property>
    <property name="text">
-    <string>close</string>
+    <string>schliessen</string>
    </property>
   </widget>
   <widget class="QLabel" name="pictureRL">
    <property name="geometry">
     <rect>
-     <x>380</x>
+     <x>373</x>
      <y>70</y>
      <width>275</width>
      <height>176</height>
@@ -72,7 +72,7 @@
   <widget class="QLabel" name="spannungTxt">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>40</x>
      <y>103</y>
      <width>150</width>
      <height>20</height>
@@ -85,7 +85,7 @@
   <widget class="QLabel" name="frequenzTxt">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>40</x>
      <y>133</y>
      <width>150</width>
      <height>20</height>
@@ -98,7 +98,7 @@
   <widget class="QLabel" name="widerstandTxt">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>40</x>
      <y>163</y>
      <width>150</width>
      <height>20</height>
@@ -111,7 +111,7 @@
   <widget class="QLabel" name="induktivitaetTxt">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>40</x>
      <y>193</y>
      <width>150</width>
      <height>20</height>
@@ -124,7 +124,7 @@
   <widget class="QLabel" name="eingabeTxt">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>30</x>
      <y>53</y>
      <width>181</width>
      <height>31</height>
@@ -142,7 +142,7 @@
   <widget class="QLineEdit" name="spannungIn">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>200</x>
      <y>103</y>
      <width>113</width>
      <height>25</height>
@@ -158,7 +158,7 @@
   <widget class="QLineEdit" name="frequenzIn">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>200</x>
      <y>133</y>
      <width>113</width>
      <height>25</height>
@@ -171,7 +171,7 @@
   <widget class="QLineEdit" name="widerstandIn">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>200</x>
      <y>163</y>
      <width>113</width>
      <height>25</height>
@@ -184,7 +184,7 @@
   <widget class="QLineEdit" name="induktivitaetIn">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>200</x>
      <y>193</y>
      <width>113</width>
      <height>25</height>
@@ -197,7 +197,7 @@
   <widget class="QLabel" name="ausgabeTxt">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>30</x>
      <y>300</y>
      <width>181</width>
      <height>31</height>
@@ -215,7 +215,7 @@
   <widget class="Line" name="line">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>30</x>
      <y>100</y>
      <width>300</width>
      <height>3</height>
@@ -228,7 +228,7 @@
   <widget class="Line" name="line_2">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>30</x>
      <y>160</y>
      <width>300</width>
      <height>3</height>
@@ -241,7 +241,7 @@
   <widget class="Line" name="line_3">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>30</x>
      <y>220</y>
      <width>300</width>
      <height>3</height>
@@ -254,7 +254,7 @@
   <widget class="Line" name="line_4">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>30</x>
      <y>190</y>
      <width>300</width>
      <height>3</height>
@@ -267,7 +267,7 @@
   <widget class="Line" name="line_5">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>30</x>
      <y>130</y>
      <width>300</width>
      <height>3</height>
@@ -280,7 +280,7 @@
   <widget class="Line" name="line_6">
    <property name="geometry">
     <rect>
-     <x>310</x>
+     <x>330</x>
      <y>100</y>
      <width>3</width>
      <height>150</height>
@@ -293,7 +293,7 @@
   <widget class="Line" name="line_7">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>30</x>
      <y>100</y>
      <width>3</width>
      <height>150</height>
@@ -306,8 +306,8 @@
   <widget class="QLabel" name="impedanzTxt">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>370</y>
+     <x>40</x>
+     <y>383</y>
      <width>150</width>
      <height>20</height>
     </rect>
@@ -319,8 +319,8 @@
   <widget class="Line" name="line_8">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>337</y>
+     <x>30</x>
+     <y>350</y>
      <width>3</width>
      <height>90</height>
     </rect>
@@ -332,8 +332,8 @@
   <widget class="QLineEdit" name="phasenwinkelOut">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>400</y>
+     <x>200</x>
+     <y>413</y>
      <width>113</width>
      <height>25</height>
     </rect>
@@ -345,8 +345,8 @@
   <widget class="QLineEdit" name="impedanzOut">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>370</y>
+     <x>200</x>
+     <y>383</y>
      <width>113</width>
      <height>25</height>
     </rect>
@@ -358,8 +358,8 @@
   <widget class="Line" name="line_9">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>397</y>
+     <x>30</x>
+     <y>410</y>
      <width>300</width>
      <height>3</height>
     </rect>
@@ -371,8 +371,8 @@
   <widget class="Line" name="line_10">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>337</y>
+     <x>30</x>
+     <y>350</y>
      <width>300</width>
      <height>3</height>
     </rect>
@@ -384,8 +384,8 @@
   <widget class="Line" name="line_11">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>367</y>
+     <x>30</x>
+     <y>380</y>
      <width>300</width>
      <height>3</height>
     </rect>
@@ -397,8 +397,8 @@
   <widget class="QLabel" name="stromTxt">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>340</y>
+     <x>40</x>
+     <y>353</y>
      <width>150</width>
      <height>20</height>
     </rect>
@@ -410,8 +410,8 @@
   <widget class="QLabel" name="phasenwinkelTxt">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>400</y>
+     <x>40</x>
+     <y>413</y>
      <width>150</width>
      <height>20</height>
     </rect>
@@ -423,8 +423,8 @@
   <widget class="Line" name="line_12">
    <property name="geometry">
     <rect>
-     <x>310</x>
-     <y>337</y>
+     <x>330</x>
+     <y>350</y>
      <width>3</width>
      <height>90</height>
     </rect>
@@ -436,8 +436,8 @@
   <widget class="QLineEdit" name="stromOut">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>340</y>
+     <x>200</x>
+     <y>353</y>
      <width>113</width>
      <height>25</height>
     </rect>
@@ -455,8 +455,8 @@
   <widget class="Line" name="line_13">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>427</y>
+     <x>30</x>
+     <y>440</y>
      <width>300</width>
      <height>3</height>
     </rect>
@@ -468,8 +468,8 @@
   <widget class="QLineEdit" name="blindleistungOut">
    <property name="geometry">
     <rect>
-     <x>520</x>
-     <y>370</y>
+     <x>530</x>
+     <y>383</y>
      <width>113</width>
      <height>25</height>
     </rect>
@@ -481,8 +481,8 @@
   <widget class="Line" name="line_14">
    <property name="geometry">
     <rect>
-     <x>350</x>
-     <y>337</y>
+     <x>360</x>
+     <y>350</y>
      <width>3</width>
      <height>90</height>
     </rect>
@@ -494,8 +494,8 @@
   <widget class="QLineEdit" name="leistungOut">
    <property name="geometry">
     <rect>
-     <x>520</x>
-     <y>340</y>
+     <x>530</x>
+     <y>353</y>
      <width>113</width>
      <height>25</height>
     </rect>
@@ -507,8 +507,8 @@
   <widget class="Line" name="line_15">
    <property name="geometry">
     <rect>
-     <x>350</x>
-     <y>427</y>
+     <x>360</x>
+     <y>440</y>
      <width>300</width>
      <height>3</height>
     </rect>
@@ -520,8 +520,8 @@
   <widget class="QLabel" name="blindleistungTxt">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>370</y>
+     <x>370</x>
+     <y>383</y>
      <width>150</width>
      <height>20</height>
     </rect>
@@ -533,8 +533,8 @@
   <widget class="Line" name="line_16">
    <property name="geometry">
     <rect>
-     <x>350</x>
-     <y>397</y>
+     <x>360</x>
+     <y>410</y>
      <width>300</width>
      <height>3</height>
     </rect>
@@ -546,8 +546,8 @@
   <widget class="QLineEdit" name="scheinleistungOut">
    <property name="geometry">
     <rect>
-     <x>520</x>
-     <y>400</y>
+     <x>530</x>
+     <y>413</y>
      <width>113</width>
      <height>25</height>
     </rect>
@@ -559,8 +559,8 @@
   <widget class="Line" name="line_17">
    <property name="geometry">
     <rect>
-     <x>350</x>
-     <y>337</y>
+     <x>360</x>
+     <y>350</y>
      <width>300</width>
      <height>3</height>
     </rect>
@@ -572,8 +572,8 @@
   <widget class="Line" name="line_18">
    <property name="geometry">
     <rect>
-     <x>350</x>
-     <y>367</y>
+     <x>360</x>
+     <y>380</y>
      <width>300</width>
      <height>3</height>
     </rect>
@@ -585,8 +585,8 @@
   <widget class="Line" name="line_19">
    <property name="geometry">
     <rect>
-     <x>650</x>
-     <y>337</y>
+     <x>660</x>
+     <y>350</y>
      <width>3</width>
      <height>90</height>
     </rect>
@@ -598,8 +598,8 @@
   <widget class="QLabel" name="leistungTxt">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>340</y>
+     <x>370</x>
+     <y>353</y>
      <width>150</width>
      <height>20</height>
     </rect>
@@ -611,8 +611,8 @@
   <widget class="QLabel" name="scheinleistungTxt">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>400</y>
+     <x>370</x>
+     <y>413</y>
      <width>150</width>
      <height>20</height>
     </rect>
@@ -633,7 +633,6 @@
    <property name="font">
     <font>
      <pointsize>18</pointsize>
-     <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
@@ -653,7 +652,6 @@
    <property name="font">
     <font>
      <pointsize>18</pointsize>
-     <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
@@ -673,7 +671,6 @@
    <property name="font">
     <font>
      <pointsize>18</pointsize>
-     <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
@@ -719,7 +716,6 @@
    <property name="font">
     <font>
      <pointsize>18</pointsize>
-     <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
@@ -730,9 +726,9 @@
   <widget class="QPushButton" name="calculate">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>201</x>
      <y>260</y>
-     <width>89</width>
+     <width>111</width>
      <height>25</height>
     </rect>
    </property>
@@ -743,8 +739,8 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>77</y>
+     <x>30</x>
+     <y>80</y>
      <width>181</width>
      <height>17</height>
     </rect>
@@ -761,10 +757,10 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>430</y>
-     <width>361</width>
-     <height>17</height>
+     <x>30</x>
+     <y>319</y>
+     <width>291</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="font">
@@ -779,7 +775,7 @@
   <widget class="Line" name="line_26">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>30</x>
      <y>250</y>
      <width>300</width>
      <height>3</height>
@@ -792,7 +788,7 @@
   <widget class="QLineEdit" name="kapazitaetIn">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>200</x>
      <y>223</y>
      <width>113</width>
      <height>25</height>
@@ -805,14 +801,14 @@
   <widget class="QLabel" name="kapazitaetTxt">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>40</x>
      <y>223</y>
      <width>150</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>Kapazitaet C [F]</string>
+    <string>Kapazität C [F]</string>
    </property>
   </widget>
  </widget>

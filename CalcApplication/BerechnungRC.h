@@ -42,12 +42,12 @@ class BerechnungRC : public QWidget
     double s = u * i;
     double phi = (qAcos((p / s)) / (2 * M_PI)) * 360;
 
-    ui->stromOut->setText(QString::number(i, 'f', 2));
-    ui->impedanzOut->setText(QString::number(z, 'f', 2));
-    ui->phasenwinkelOut->setText(QString::number(phi, 'f', 2));
-    ui->leistungOut->setText(QString::number(p, 'f', 2));
-    ui->blindleistungOut->setText(QString::number(q, 'f', 2));
-    ui->scheinleistungOut->setText(QString::number(s, 'f', 2));
+    ui->stromOut->setText(QString::number(i, 'f', 3));
+    ui->impedanzOut->setText(QString::number(z, 'f', 3));
+    ui->phasenwinkelOut->setText(QString::number(phi, 'f', 3));
+    ui->leistungOut->setText(QString::number(p, 'f', 3));
+    ui->blindleistungOut->setText(QString::number(q, 'f', 3));
+    ui->scheinleistungOut->setText(QString::number(s, 'f', 3));
   }
 
  private:
