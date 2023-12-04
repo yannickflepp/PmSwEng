@@ -20,6 +20,9 @@ SOURCES += \
     BerechnungRL.cpp \
     BerechnungRLC.cpp \
     Error.cpp \
+    TestBerechnungRC.cpp \
+    TestBerechnungRL.cpp \
+    TestBerechnungRLC.cpp \
     main.cpp \
     MainWindow.cpp
 
