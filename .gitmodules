@@ -1,0 +1,3 @@
+[submodule "CalcApplication/googletest"]
+	path = CalcApplication/googletest
+	url = https://github.com/google/googletest.git
