@@ -1,0 +1,9 @@
+<map id="MainWindow" name="MainWindow">
+<area shape="rect" id="node1" title=" " alt="" coords="226,260,333,287"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,171,121,197"/>
+<area shape="rect" id="node3" href="$classBerechnungRLC.html" title=" " alt="" coords="145,171,269,197"/>
+<area shape="rect" id="node4" title=" " alt="" coords="249,5,328,32"/>
+<area shape="rect" id="node5" href="$classError.html" title=" " alt="" coords="319,81,373,108"/>
+<area shape="rect" id="node6" href="$classBerechnungRC.html" title=" " alt="" coords="294,171,411,197"/>
+<area shape="rect" id="node7" href="$classBerechnungRL.html" title=" " alt="" coords="435,171,550,197"/>
+</map>
