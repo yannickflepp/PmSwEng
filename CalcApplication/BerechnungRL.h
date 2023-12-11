@@ -21,6 +21,30 @@ class BerechnungRL : public QWidget
  public:
   BerechnungRL(QWidget* parent = nullptr);
   ~BerechnungRL();
+  static double getImpedanz(double r, double f, double l)
+  {
+    return qSqrt(qPow(r, 2) + qPow((2 * M_PI * f * l), 2));
+  }
+  static double getStrom(double u, double z)
+  {
+    return u / z;
+  }
+  static double getLeistung(double r, double i)
+  {
+    return r * qPow(i, 2);
+  }
+  static double getBlindLeistung(double f, double l, double i)
+  {
+    return (2 * M_PI * f * l) * qPow(i, 2);
+  }
+  static double getScheinLeistung(double u, double i)
+  {
+    return u * i;
+  }
+  static double getPhasenWinkel(double p, double s)
+  {
+    return (qAcos((p / s)) / (2 * M_PI)) * 360;
+  }
   Error error;
 
  private slots:
@@ -35,12 +59,12 @@ class BerechnungRL : public QWidget
     {
       error.show();
     }
-    double z = qSqrt(qPow(r, 2) + qPow((2 * M_PI * f * l), 2));
-    double i = u / z;
-    double p = r * qPow(i, 2);
-    double q = (2 * M_PI * f * l) * qPow(i, 2);
-    double s = u * i;
-    double phi = (qAcos((p / s)) / (2 * M_PI)) * 360;
+    double z = getImpedanz(r, f, l);
+    double i = getStrom(u, z);
+    double p = getLeistung(r, i);
+    double q = getBlindLeistung(f, l, i);
+    double s = getScheinLeistung(u, i);
+    double phi = getPhasenWinkel(p, s);
 
     ui->stromOut->setText(QString::number(i, 'f', 3));
     ui->impedanzOut->setText(QString::number(z, 'f', 3));
