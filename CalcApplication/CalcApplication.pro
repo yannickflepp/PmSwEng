@@ -50,7 +50,7 @@ DISTFILES +=
 RESOURCES += \
   Res.qrc
 
-GOOGLETEST_DIR = $$_PRO_FILE_PWD_/googletest
+GOOGLETEST_DIR = $$_PRO_FILE_PWD_/../googletest
 
 !isEmpty(GOOGLETEST_DIR): {
     GTEST_SRCDIR = $$GOOGLETEST_DIR/googletest
