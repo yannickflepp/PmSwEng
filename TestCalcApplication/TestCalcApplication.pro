@@ -20,6 +20,25 @@ SOURCES += \
     TestBerechnungRL.cpp \
     TestBerechnungRLC.cpp \
     main.cpp \
+    ../CalcApplication/BerechnungRC.cpp \
+    ../CalcApplication/BerechnungRL.cpp \
+    ../CalcApplication/BerechnungRLC.cpp \
+    ../CalcApplication/Error.cpp \
+    ../CalcApplication/MainWindow.cpp
+
+HEADERS += \
+    ../CalcApplication/BerechnungRC.h \
+    ../CalcApplication/BerechnungRL.h \
+    ../CalcApplication/BerechnungRLC.h \
+    ../CalcApplication/Error.h \
+    ../CalcApplication/MainWindow.h
+
+FORMS += \
+    ../CalcApplication/BerechnungRC.ui \
+    ../CalcApplication/BerechnungRL.ui \
+    ../CalcApplication/BerechnungRLC.ui \
+    ../CalcApplication/Error.ui \
+    ../CalcApplication/MainWindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -29,7 +48,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES +=
 
 RESOURCES += \
-  Res.qrc
+  ../CalcApplication/Res.qrc
 
 GOOGLETEST_DIR = $$_PRO_FILE_PWD_/../googletest
 

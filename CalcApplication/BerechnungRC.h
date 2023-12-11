@@ -21,6 +21,10 @@ class BerechnungRC : public QWidget
  public:
   BerechnungRC(QWidget* parent = nullptr);
   ~BerechnungRC();
+  static double getImpedanz(double r, double f, double c)
+  {
+    return qSqrt(qPow(r, 2) + qPow(1 / (2 * M_PI * f * c), 2));
+  }
   Error error;
 
  private slots:
@@ -35,7 +39,7 @@ class BerechnungRC : public QWidget
     {
       error.show();
     }
-    double z = qSqrt(qPow(r, 2) + qPow(1 / (2 * M_PI * f * c), 2));
+    double z = getImpedanz(r, f, c);
     double i = u / z;
     double p = r * qPow(i, 2);
     double q = (1 / (2 * M_PI * f * c)) * qPow(i, 2);
