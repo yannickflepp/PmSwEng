@@ -57,7 +57,7 @@ class BerechnungRLC : public QWidget
   Error error;
 
  private slots:
-  void onPbPressed()
+  void onPbPressedRLC()
   {
     bool ok = false;
     double u = (ui->spannungIn->text()).toDouble(&ok);
