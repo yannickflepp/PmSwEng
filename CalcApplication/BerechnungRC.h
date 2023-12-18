@@ -60,7 +60,7 @@ class BerechnungRC : public QWidget
   /**
    * @brief getStrom
    *
-   * Beschrieb
+   * Beschrieb ok
    *
    * @param u
    * @param z
