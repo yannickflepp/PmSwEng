@@ -23,6 +23,7 @@ class MainWindow : public QMainWindow
   BerechnungRL berechnungRL;
   BerechnungRC berechnungRC;
   BerechnungRLC berechnungRLC;
+
  public slots:
   void onPbRLPressed()
   {

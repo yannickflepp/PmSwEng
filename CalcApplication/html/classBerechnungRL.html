@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -63,6 +70,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classBerechnungRL-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -94,6 +102,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a93c85f9b70b8917dd84bfd3c3f58051b"><td class="memItemLeft" align="right" valign="top"><a id="a93c85f9b70b8917dd84bfd3c3f58051b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>BerechnungRL</b> (QWidget *parent=nullptr)</td></tr>
 <tr class="separator:a93c85f9b70b8917dd84bfd3c3f58051b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a12dcf4fc2f3a5b37173cd9dd752451c4"><td class="memItemLeft" align="right" valign="top"><a id="a12dcf4fc2f3a5b37173cd9dd752451c4"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>getImpedanz</b> (double r, double f, double l)</td></tr>
+<tr class="separator:a12dcf4fc2f3a5b37173cd9dd752451c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a0cd810d67efea0f2f3d0cc3d487b6"><td class="memItemLeft" align="right" valign="top"><a id="ae1a0cd810d67efea0f2f3d0cc3d487b6"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>getStrom</b> (double u, double z)</td></tr>
+<tr class="separator:ae1a0cd810d67efea0f2f3d0cc3d487b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07319cd16eefae14d287603715dbc03e"><td class="memItemLeft" align="right" valign="top"><a id="a07319cd16eefae14d287603715dbc03e"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>getLeistung</b> (double r, double i)</td></tr>
+<tr class="separator:a07319cd16eefae14d287603715dbc03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74fee7a15736719b777a514a0ed16a8"><td class="memItemLeft" align="right" valign="top"><a id="aa74fee7a15736719b777a514a0ed16a8"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>getBlindLeistung</b> (double f, double l, double i)</td></tr>
+<tr class="separator:aa74fee7a15736719b777a514a0ed16a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a569ae9e3a5785e329cae90209cd238a3"><td class="memItemLeft" align="right" valign="top"><a id="a569ae9e3a5785e329cae90209cd238a3"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>getScheinLeistung</b> (double u, double i)</td></tr>
+<tr class="separator:a569ae9e3a5785e329cae90209cd238a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0720e62219f582674d7997b53c567f"><td class="memItemLeft" align="right" valign="top"><a id="aba0720e62219f582674d7997b53c567f"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>getPhasenWinkel</b> (double p, double s)</td></tr>
+<tr class="separator:aba0720e62219f582674d7997b53c567f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>

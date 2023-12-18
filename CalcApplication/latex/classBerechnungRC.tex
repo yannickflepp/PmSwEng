@@ -2,6 +2,15 @@
 \label{classBerechnungRC}\index{BerechnungRC@{BerechnungRC}}
 
 
+Die \mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}} Klasse.  
+
+
+
+
+{\ttfamily \#include $<$Berechnung\+R\+C.\+h$>$}
+
+
+
 Inheritance diagram for Berechnung\+RC\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,16 +30,216 @@ Collaboration diagram for Berechnung\+RC\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classBerechnungRC_a25e89ed0cebb814d6f74a2abb1e6768a}\label{classBerechnungRC_a25e89ed0cebb814d6f74a2abb1e6768a}} 
-{\bfseries Berechnung\+RC} (Q\+Widget $\ast$parent=nullptr)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classBerechnungRC_a25e89ed0cebb814d6f74a2abb1e6768a}{Berechnung\+RC}} (Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}} Konstrukteur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBerechnungRC_ab3700afd5d435b3b19123602ff996c07}{$\sim$\+Berechnung\+RC}} ()
+\begin{DoxyCompactList}\small\item\em $\sim$\+Berechnung\+RC Destrukteur \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classBerechnungRC_a48ef55580608f8f2f942ffbc5640ec0f}{get\+Impedanz}} (double r, double f, double c)
+\begin{DoxyCompactList}\small\item\em get\+Impedanz \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classBerechnungRC_aab60c91154836e8df69a3c975072448c}{get\+Strom}} (double u, double z)
+\begin{DoxyCompactList}\small\item\em get\+Strom \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classBerechnungRC_aa2fbd4e295ce97921b1a4f712d270403}{get\+Leistung}} (double r, double i)
+\begin{DoxyCompactList}\small\item\em get\+Leistung \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classBerechnungRC_aa95a57bc22b71a8b3c75217f2a90ab4b}{get\+Blind\+Leistung}} (double f, double c, double i)
+\begin{DoxyCompactList}\small\item\em get\+Blind\+Leistung \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classBerechnungRC_a0cc7075977751218bbc13c2e41d6ce75}{get\+Schein\+Leistung}} (double u, double i)
+\begin{DoxyCompactList}\small\item\em get\+Schein\+Leistung \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classBerechnungRC_a2d8c883fa85f67bcc62343aaae9be346}{get\+Phasen\+Winkel}} (double p, double s)
+\begin{DoxyCompactList}\small\item\em get\+Phasen\+Winkel \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classBerechnungRC_acc44278a44467e5119451fc3dc795f99}\label{classBerechnungRC_acc44278a44467e5119451fc3dc795f99}} 
-\mbox{\hyperlink{classError}{Error}} {\bfseries error}
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classError}{Error}} \mbox{\hyperlink{classBerechnungRC_acc44278a44467e5119451fc3dc795f99}{error}}
+\begin{DoxyCompactList}\small\item\em error \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Die \mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}} Klasse. 
+
+-\/Serieschaltung aller Elemente -\/Alle Funktionen der Schaltung 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBerechnungRC_a25e89ed0cebb814d6f74a2abb1e6768a}\label{classBerechnungRC_a25e89ed0cebb814d6f74a2abb1e6768a}} 
+\index{BerechnungRC@{BerechnungRC}!BerechnungRC@{BerechnungRC}}
+\index{BerechnungRC@{BerechnungRC}!BerechnungRC@{BerechnungRC}}
+\doxysubsubsection{\texorpdfstring{BerechnungRC()}{BerechnungRC()}}
+{\footnotesize\ttfamily Berechnung\+R\+C\+::\+Berechnung\+RC (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}} Konstrukteur. 
+
+Diese Methode erzeugt ein Objekt der Klasse \mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}}. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & (Beschrieb mit Gull) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBerechnungRC_ab3700afd5d435b3b19123602ff996c07}\label{classBerechnungRC_ab3700afd5d435b3b19123602ff996c07}} 
+\index{BerechnungRC@{BerechnungRC}!````~BerechnungRC@{$\sim$BerechnungRC}}
+\index{````~BerechnungRC@{$\sim$BerechnungRC}!BerechnungRC@{BerechnungRC}}
+\doxysubsubsection{\texorpdfstring{$\sim$BerechnungRC()}{~BerechnungRC()}}
+{\footnotesize\ttfamily Berechnung\+R\+C\+::$\sim$\+Berechnung\+RC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$\sim$\+Berechnung\+RC Destrukteur 
+
+Diese Methode löscht ein erzeugtes Objekt der Klasse \mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBerechnungRC_aa95a57bc22b71a8b3c75217f2a90ab4b}\label{classBerechnungRC_aa95a57bc22b71a8b3c75217f2a90ab4b}} 
+\index{BerechnungRC@{BerechnungRC}!getBlindLeistung@{getBlindLeistung}}
+\index{getBlindLeistung@{getBlindLeistung}!BerechnungRC@{BerechnungRC}}
+\doxysubsubsection{\texorpdfstring{getBlindLeistung()}{getBlindLeistung()}}
+{\footnotesize\ttfamily static double Berechnung\+R\+C\+::get\+Blind\+Leistung (\begin{DoxyParamCaption}\item[{double}]{f,  }\item[{double}]{c,  }\item[{double}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+get\+Blind\+Leistung 
+
+Beschrieb
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+{\em c} & \\
+\hline
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBerechnungRC_a48ef55580608f8f2f942ffbc5640ec0f}\label{classBerechnungRC_a48ef55580608f8f2f942ffbc5640ec0f}} 
+\index{BerechnungRC@{BerechnungRC}!getImpedanz@{getImpedanz}}
+\index{getImpedanz@{getImpedanz}!BerechnungRC@{BerechnungRC}}
+\doxysubsubsection{\texorpdfstring{getImpedanz()}{getImpedanz()}}
+{\footnotesize\ttfamily static double Berechnung\+R\+C\+::get\+Impedanz (\begin{DoxyParamCaption}\item[{double}]{r,  }\item[{double}]{f,  }\item[{double}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+get\+Impedanz 
+
+Diese Funktion berechnet die Gesamtimpedanz aus den frei wählbaren Eingabeparametern der gegebenen R\+C-\/\+Schaltung.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Gegebener Widerstand in Ohm. \\
+\hline
+{\em f} & Gegebene Frequenz in Hertz. \\
+\hline
+{\em c} & Gegebene Kapazität in Farrad. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+/f\textbackslash{}sqrt\{ (x\+\_\+2-\/x\+\_\+1)$^\wedge$2 + (y\+\_\+2-\/y\+\_\+1)$^\wedge$2 \}/f 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBerechnungRC_aa2fbd4e295ce97921b1a4f712d270403}\label{classBerechnungRC_aa2fbd4e295ce97921b1a4f712d270403}} 
+\index{BerechnungRC@{BerechnungRC}!getLeistung@{getLeistung}}
+\index{getLeistung@{getLeistung}!BerechnungRC@{BerechnungRC}}
+\doxysubsubsection{\texorpdfstring{getLeistung()}{getLeistung()}}
+{\footnotesize\ttfamily static double Berechnung\+R\+C\+::get\+Leistung (\begin{DoxyParamCaption}\item[{double}]{r,  }\item[{double}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+get\+Leistung 
+
+Beschrieb
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBerechnungRC_a2d8c883fa85f67bcc62343aaae9be346}\label{classBerechnungRC_a2d8c883fa85f67bcc62343aaae9be346}} 
+\index{BerechnungRC@{BerechnungRC}!getPhasenWinkel@{getPhasenWinkel}}
+\index{getPhasenWinkel@{getPhasenWinkel}!BerechnungRC@{BerechnungRC}}
+\doxysubsubsection{\texorpdfstring{getPhasenWinkel()}{getPhasenWinkel()}}
+{\footnotesize\ttfamily static double Berechnung\+R\+C\+::get\+Phasen\+Winkel (\begin{DoxyParamCaption}\item[{double}]{p,  }\item[{double}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+get\+Phasen\+Winkel 
+
+Beschrieb
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBerechnungRC_a0cc7075977751218bbc13c2e41d6ce75}\label{classBerechnungRC_a0cc7075977751218bbc13c2e41d6ce75}} 
+\index{BerechnungRC@{BerechnungRC}!getScheinLeistung@{getScheinLeistung}}
+\index{getScheinLeistung@{getScheinLeistung}!BerechnungRC@{BerechnungRC}}
+\doxysubsubsection{\texorpdfstring{getScheinLeistung()}{getScheinLeistung()}}
+{\footnotesize\ttfamily static double Berechnung\+R\+C\+::get\+Schein\+Leistung (\begin{DoxyParamCaption}\item[{double}]{u,  }\item[{double}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+get\+Schein\+Leistung 
+
+Beschrieb
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & \\
+\hline
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBerechnungRC_aab60c91154836e8df69a3c975072448c}\label{classBerechnungRC_aab60c91154836e8df69a3c975072448c}} 
+\index{BerechnungRC@{BerechnungRC}!getStrom@{getStrom}}
+\index{getStrom@{getStrom}!BerechnungRC@{BerechnungRC}}
+\doxysubsubsection{\texorpdfstring{getStrom()}{getStrom()}}
+{\footnotesize\ttfamily static double Berechnung\+R\+C\+::get\+Strom (\begin{DoxyParamCaption}\item[{double}]{u,  }\item[{double}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+get\+Strom 
+
+Beschrieb
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classBerechnungRC_acc44278a44467e5119451fc3dc795f99}\label{classBerechnungRC_acc44278a44467e5119451fc3dc795f99}} 
+\index{BerechnungRC@{BerechnungRC}!error@{error}}
+\index{error@{error}!BerechnungRC@{BerechnungRC}}
+\doxysubsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classError}{Error}} Berechnung\+R\+C\+::error}
+
+
+
+error 
+
+Beschrieb 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

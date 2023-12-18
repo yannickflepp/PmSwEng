@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -63,18 +70,24 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classBerechnungRC-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">BerechnungRC Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Die <a class="el" href="classBerechnungRC.html" title="Die BerechnungRC Klasse.">BerechnungRC</a> Klasse.  
+ <a href="classBerechnungRC.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="BerechnungRC_8h_source.html">BerechnungRC.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for BerechnungRC:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBerechnungRC__inherit__graph.png" border="0" usemap="#BerechnungRC_inherit__map" alt="Inheritance graph"/></div>
 <map name="BerechnungRC_inherit__map" id="BerechnungRC_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,123,107"/>
+<area shape="rect" title="Die BerechnungRC Klasse." alt="" coords="5,80,123,107"/>
 <area shape="rect" title=" " alt="" coords="25,5,103,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -83,7 +96,7 @@ Collaboration diagram for BerechnungRC:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBerechnungRC__coll__graph.png" border="0" usemap="#BerechnungRC_coll__map" alt="Collaboration graph"/></div>
 <map name="BerechnungRC_coll__map" id="BerechnungRC_coll__map">
-<area shape="rect" title=" " alt="" coords="5,171,123,197"/>
+<area shape="rect" title="Die BerechnungRC Klasse." alt="" coords="5,171,123,197"/>
 <area shape="rect" title=" " alt="" coords="19,5,98,32"/>
 <area shape="rect" href="classError.html" title=" " alt="" coords="80,81,133,108"/>
 </map>
@@ -91,16 +104,405 @@ Collaboration diagram for BerechnungRC:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a25e89ed0cebb814d6f74a2abb1e6768a"><td class="memItemLeft" align="right" valign="top"><a id="a25e89ed0cebb814d6f74a2abb1e6768a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BerechnungRC</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:a25e89ed0cebb814d6f74a2abb1e6768a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBerechnungRC.html#a25e89ed0cebb814d6f74a2abb1e6768a">BerechnungRC</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a25e89ed0cebb814d6f74a2abb1e6768a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classBerechnungRC.html" title="Die BerechnungRC Klasse.">BerechnungRC</a> Konstrukteur.  <a href="classBerechnungRC.html#a25e89ed0cebb814d6f74a2abb1e6768a">More...</a><br /></td></tr>
 <tr class="separator:a25e89ed0cebb814d6f74a2abb1e6768a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3700afd5d435b3b19123602ff996c07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBerechnungRC.html#ab3700afd5d435b3b19123602ff996c07">~BerechnungRC</a> ()</td></tr>
+<tr class="memdesc:ab3700afd5d435b3b19123602ff996c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">~BerechnungRC Destrukteur  <a href="classBerechnungRC.html#ab3700afd5d435b3b19123602ff996c07">More...</a><br /></td></tr>
+<tr class="separator:ab3700afd5d435b3b19123602ff996c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a48ef55580608f8f2f942ffbc5640ec0f"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBerechnungRC.html#a48ef55580608f8f2f942ffbc5640ec0f">getImpedanz</a> (double r, double f, double c)</td></tr>
+<tr class="memdesc:a48ef55580608f8f2f942ffbc5640ec0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">getImpedanz  <a href="classBerechnungRC.html#a48ef55580608f8f2f942ffbc5640ec0f">More...</a><br /></td></tr>
+<tr class="separator:a48ef55580608f8f2f942ffbc5640ec0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab60c91154836e8df69a3c975072448c"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBerechnungRC.html#aab60c91154836e8df69a3c975072448c">getStrom</a> (double u, double z)</td></tr>
+<tr class="memdesc:aab60c91154836e8df69a3c975072448c"><td class="mdescLeft">&#160;</td><td class="mdescRight">getStrom  <a href="classBerechnungRC.html#aab60c91154836e8df69a3c975072448c">More...</a><br /></td></tr>
+<tr class="separator:aab60c91154836e8df69a3c975072448c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2fbd4e295ce97921b1a4f712d270403"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBerechnungRC.html#aa2fbd4e295ce97921b1a4f712d270403">getLeistung</a> (double r, double i)</td></tr>
+<tr class="memdesc:aa2fbd4e295ce97921b1a4f712d270403"><td class="mdescLeft">&#160;</td><td class="mdescRight">getLeistung  <a href="classBerechnungRC.html#aa2fbd4e295ce97921b1a4f712d270403">More...</a><br /></td></tr>
+<tr class="separator:aa2fbd4e295ce97921b1a4f712d270403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95a57bc22b71a8b3c75217f2a90ab4b"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBerechnungRC.html#aa95a57bc22b71a8b3c75217f2a90ab4b">getBlindLeistung</a> (double f, double c, double i)</td></tr>
+<tr class="memdesc:aa95a57bc22b71a8b3c75217f2a90ab4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">getBlindLeistung  <a href="classBerechnungRC.html#aa95a57bc22b71a8b3c75217f2a90ab4b">More...</a><br /></td></tr>
+<tr class="separator:aa95a57bc22b71a8b3c75217f2a90ab4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc7075977751218bbc13c2e41d6ce75"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBerechnungRC.html#a0cc7075977751218bbc13c2e41d6ce75">getScheinLeistung</a> (double u, double i)</td></tr>
+<tr class="memdesc:a0cc7075977751218bbc13c2e41d6ce75"><td class="mdescLeft">&#160;</td><td class="mdescRight">getScheinLeistung  <a href="classBerechnungRC.html#a0cc7075977751218bbc13c2e41d6ce75">More...</a><br /></td></tr>
+<tr class="separator:a0cc7075977751218bbc13c2e41d6ce75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8c883fa85f67bcc62343aaae9be346"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBerechnungRC.html#a2d8c883fa85f67bcc62343aaae9be346">getPhasenWinkel</a> (double p, double s)</td></tr>
+<tr class="memdesc:a2d8c883fa85f67bcc62343aaae9be346"><td class="mdescLeft">&#160;</td><td class="mdescRight">getPhasenWinkel  <a href="classBerechnungRC.html#a2d8c883fa85f67bcc62343aaae9be346">More...</a><br /></td></tr>
+<tr class="separator:a2d8c883fa85f67bcc62343aaae9be346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:acc44278a44467e5119451fc3dc795f99"><td class="memItemLeft" align="right" valign="top"><a id="acc44278a44467e5119451fc3dc795f99"></a>
-<a class="el" href="classError.html">Error</a>&#160;</td><td class="memItemRight" valign="bottom"><b>error</b></td></tr>
+<tr class="memitem:acc44278a44467e5119451fc3dc795f99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classError.html">Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBerechnungRC.html#acc44278a44467e5119451fc3dc795f99">error</a></td></tr>
+<tr class="memdesc:acc44278a44467e5119451fc3dc795f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">error  <a href="classBerechnungRC.html#acc44278a44467e5119451fc3dc795f99">More...</a><br /></td></tr>
 <tr class="separator:acc44278a44467e5119451fc3dc795f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Die <a class="el" href="classBerechnungRC.html" title="Die BerechnungRC Klasse.">BerechnungRC</a> Klasse. </p>
+<p>-Serieschaltung aller Elemente -Alle Funktionen der Schaltung </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a25e89ed0cebb814d6f74a2abb1e6768a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25e89ed0cebb814d6f74a2abb1e6768a">&#9670;&nbsp;</a></span>BerechnungRC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BerechnungRC::BerechnungRC </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classBerechnungRC.html" title="Die BerechnungRC Klasse.">BerechnungRC</a> Konstrukteur. </p>
+<p>Diese Methode erzeugt ein Objekt der Klasse <a class="el" href="classBerechnungRC.html" title="Die BerechnungRC Klasse.">BerechnungRC</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>(Beschrieb mit Gull) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab3700afd5d435b3b19123602ff996c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3700afd5d435b3b19123602ff996c07">&#9670;&nbsp;</a></span>~BerechnungRC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BerechnungRC::~BerechnungRC </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>~BerechnungRC Destrukteur </p>
+<p>Diese Methode löscht ein erzeugtes Objekt der Klasse <a class="el" href="classBerechnungRC.html" title="Die BerechnungRC Klasse.">BerechnungRC</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa95a57bc22b71a8b3c75217f2a90ab4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa95a57bc22b71a8b3c75217f2a90ab4b">&#9670;&nbsp;</a></span>getBlindLeistung()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double BerechnungRC::getBlindLeistung </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getBlindLeistung </p>
+<p>Beschrieb</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td></td></tr>
+    <tr><td class="paramname">c</td><td></td></tr>
+    <tr><td class="paramname">i</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a48ef55580608f8f2f942ffbc5640ec0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ef55580608f8f2f942ffbc5640ec0f">&#9670;&nbsp;</a></span>getImpedanz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double BerechnungRC::getImpedanz </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getImpedanz </p>
+<p>Diese Funktion berechnet die Gesamtimpedanz aus den frei wählbaren Eingabeparametern der gegebenen RC-Schaltung.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Gegebener Widerstand in Ohm. </td></tr>
+    <tr><td class="paramname">f</td><td>Gegebene Frequenz in Hertz. </td></tr>
+    <tr><td class="paramname">c</td><td>Gegebene Kapazität in Farrad. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>/f\sqrt{ (x_2-x_1)^2 + (y_2-y_1)^2 }/f </dd></dl>
+
+</div>
+</div>
+<a id="aa2fbd4e295ce97921b1a4f712d270403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2fbd4e295ce97921b1a4f712d270403">&#9670;&nbsp;</a></span>getLeistung()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double BerechnungRC::getLeistung </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getLeistung </p>
+<p>Beschrieb</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td></td></tr>
+    <tr><td class="paramname">i</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a2d8c883fa85f67bcc62343aaae9be346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8c883fa85f67bcc62343aaae9be346">&#9670;&nbsp;</a></span>getPhasenWinkel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double BerechnungRC::getPhasenWinkel </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getPhasenWinkel </p>
+<p>Beschrieb</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td></td></tr>
+    <tr><td class="paramname">s</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a0cc7075977751218bbc13c2e41d6ce75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cc7075977751218bbc13c2e41d6ce75">&#9670;&nbsp;</a></span>getScheinLeistung()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double BerechnungRC::getScheinLeistung </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getScheinLeistung </p>
+<p>Beschrieb</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td></td></tr>
+    <tr><td class="paramname">i</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="aab60c91154836e8df69a3c975072448c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab60c91154836e8df69a3c975072448c">&#9670;&nbsp;</a></span>getStrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double BerechnungRC::getStrom </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getStrom </p>
+<p>Beschrieb</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td></td></tr>
+    <tr><td class="paramname">z</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="acc44278a44467e5119451fc3dc795f99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc44278a44467e5119451fc3dc795f99">&#9670;&nbsp;</a></span>error</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classError.html">Error</a> BerechnungRC::error</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>error </p>
+<p>Beschrieb </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="BerechnungRC_8h_source.html">BerechnungRC.h</a></li>
 <li>BerechnungRC.cpp</li>

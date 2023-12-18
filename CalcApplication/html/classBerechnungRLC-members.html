@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -70,7 +77,14 @@ $(function() {
 <table class="directory">
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>BerechnungRLC</b>(QWidget *parent=nullptr) (defined in <a class="el" href="classBerechnungRLC.html">BerechnungRLC</a>)</td><td class="entry"><a class="el" href="classBerechnungRLC.html">BerechnungRLC</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>error</b> (defined in <a class="el" href="classBerechnungRLC.html">BerechnungRLC</a>)</td><td class="entry"><a class="el" href="classBerechnungRLC.html">BerechnungRLC</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~BerechnungRLC</b>() (defined in <a class="el" href="classBerechnungRLC.html">BerechnungRLC</a>)</td><td class="entry"><a class="el" href="classBerechnungRLC.html">BerechnungRLC</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getBlindLeistung</b>(double x, double i) (defined in <a class="el" href="classBerechnungRLC.html">BerechnungRLC</a>)</td><td class="entry"><a class="el" href="classBerechnungRLC.html">BerechnungRLC</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>getBlindwiderstand</b>(double f, double l, double c) (defined in <a class="el" href="classBerechnungRLC.html">BerechnungRLC</a>)</td><td class="entry"><a class="el" href="classBerechnungRLC.html">BerechnungRLC</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getImpedanz</b>(double r, double x) (defined in <a class="el" href="classBerechnungRLC.html">BerechnungRLC</a>)</td><td class="entry"><a class="el" href="classBerechnungRLC.html">BerechnungRLC</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>getLeistung</b>(double r, double i) (defined in <a class="el" href="classBerechnungRLC.html">BerechnungRLC</a>)</td><td class="entry"><a class="el" href="classBerechnungRLC.html">BerechnungRLC</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getPhasenWinkel</b>(double p, double s) (defined in <a class="el" href="classBerechnungRLC.html">BerechnungRLC</a>)</td><td class="entry"><a class="el" href="classBerechnungRLC.html">BerechnungRLC</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>getScheinLeistung</b>(double u, double i) (defined in <a class="el" href="classBerechnungRLC.html">BerechnungRLC</a>)</td><td class="entry"><a class="el" href="classBerechnungRLC.html">BerechnungRLC</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getStrom</b>(double u, double z) (defined in <a class="el" href="classBerechnungRLC.html">BerechnungRLC</a>)</td><td class="entry"><a class="el" href="classBerechnungRLC.html">BerechnungRLC</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~BerechnungRLC</b>() (defined in <a class="el" href="classBerechnungRLC.html">BerechnungRLC</a>)</td><td class="entry"><a class="el" href="classBerechnungRLC.html">BerechnungRLC</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
