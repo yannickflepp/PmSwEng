@@ -69,6 +69,7 @@ class BerechnungRLC : public QWidget
     {
       error.show();
     }
+
     double x = getBlindwiderstand(f, l, c);
     double z = getImpedanz(r, x);
     double i = getStrom(u, z);

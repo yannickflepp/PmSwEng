@@ -131,7 +131,7 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classError.html">Error</a> error;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> onPbPressed()</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> onPbPressedRLC()</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> ok = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">double</span> u = (ui-&gt;spannungIn-&gt;text()).toDouble(&amp;ok);</div>
@@ -143,29 +143,30 @@ $(function() {
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      error.show();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">double</span> x = getBlindwiderstand(f, l, c);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">double</span> z = getImpedanz(r, x);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">double</span> i = getStrom(u, z);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">double</span> p = getLeistung(r, i);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">double</span> q = getBlindLeistung(x, i);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">double</span> s = getScheinLeistung(u, i);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">double</span> phi = getPhasenWinkel(p, s);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    ui-&gt;stromOut-&gt;setText(QString::number(i, <span class="charliteral">&#39;f&#39;</span>, 3));</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    ui-&gt;impedanzOut-&gt;setText(QString::number(z, <span class="charliteral">&#39;f&#39;</span>, 3));</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    ui-&gt;phasenwinkelOut-&gt;setText(QString::number(phi, <span class="charliteral">&#39;f&#39;</span>, 3));</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    ui-&gt;leistungOut-&gt;setText(QString::number(p, <span class="charliteral">&#39;f&#39;</span>, 3));</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    ui-&gt;blindleistungOut-&gt;setText(QString::number(q, <span class="charliteral">&#39;f&#39;</span>, 3));</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    ui-&gt;scheinleistungOut-&gt;setText(QString::number(s, <span class="charliteral">&#39;f&#39;</span>, 3));</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  Ui::BerechnungRLC* ui;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif  // BERECHNUNGRL_H</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">double</span> x = getBlindwiderstand(f, l, c);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">double</span> z = getImpedanz(r, x);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">double</span> i = getStrom(u, z);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">double</span> p = getLeistung(r, i);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">double</span> q = getBlindLeistung(x, i);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">double</span> s = getScheinLeistung(u, i);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">double</span> phi = getPhasenWinkel(p, s);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    ui-&gt;stromOut-&gt;setText(QString::number(i, <span class="charliteral">&#39;f&#39;</span>, 3));</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    ui-&gt;impedanzOut-&gt;setText(QString::number(z, <span class="charliteral">&#39;f&#39;</span>, 3));</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    ui-&gt;phasenwinkelOut-&gt;setText(QString::number(phi, <span class="charliteral">&#39;f&#39;</span>, 3));</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    ui-&gt;leistungOut-&gt;setText(QString::number(p, <span class="charliteral">&#39;f&#39;</span>, 3));</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    ui-&gt;blindleistungOut-&gt;setText(QString::number(q, <span class="charliteral">&#39;f&#39;</span>, 3));</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    ui-&gt;scheinleistungOut-&gt;setText(QString::number(s, <span class="charliteral">&#39;f&#39;</span>, 3));</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  Ui::BerechnungRLC* ui;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif  // BERECHNUNGRL_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassError_html"><div class="ttname"><a href="classError.html">Error</a></div><div class="ttdef"><b>Definition:</b> Error.h:15</div></div>
+<div class="ttc" id="aclassError_html"><div class="ttname"><a href="classError.html">Error</a></div><div class="ttdoc">Die Error Klasse.</div><div class="ttdef"><b>Definition:</b> Error.h:20</div></div>
 <div class="ttc" id="aclassBerechnungRLC_html"><div class="ttname"><a href="classBerechnungRLC.html">BerechnungRLC</a></div><div class="ttdef"><b>Definition:</b> BerechnungRLC.h:17</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

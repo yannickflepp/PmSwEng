@@ -38,28 +38,28 @@ Collaboration diagram for Berechnung\+RC\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 static double \mbox{\hyperlink{classBerechnungRC_a48ef55580608f8f2f942ffbc5640ec0f}{get\+Impedanz}} (double r, double f, double c)
-\begin{DoxyCompactList}\small\item\em get\+Impedanz \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em get\+Impedanz Methode \end{DoxyCompactList}\item 
 static double \mbox{\hyperlink{classBerechnungRC_aab60c91154836e8df69a3c975072448c}{get\+Strom}} (double u, double z)
-\begin{DoxyCompactList}\small\item\em get\+Strom \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em get\+Strom Methode \end{DoxyCompactList}\item 
 static double \mbox{\hyperlink{classBerechnungRC_aa2fbd4e295ce97921b1a4f712d270403}{get\+Leistung}} (double r, double i)
-\begin{DoxyCompactList}\small\item\em get\+Leistung \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em get\+Leistung Methode \end{DoxyCompactList}\item 
 static double \mbox{\hyperlink{classBerechnungRC_aa95a57bc22b71a8b3c75217f2a90ab4b}{get\+Blind\+Leistung}} (double f, double c, double i)
-\begin{DoxyCompactList}\small\item\em get\+Blind\+Leistung \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em get\+Blind\+Leistung Methode \end{DoxyCompactList}\item 
 static double \mbox{\hyperlink{classBerechnungRC_a0cc7075977751218bbc13c2e41d6ce75}{get\+Schein\+Leistung}} (double u, double i)
-\begin{DoxyCompactList}\small\item\em get\+Schein\+Leistung \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em get\+Schein\+Leistung Methode \end{DoxyCompactList}\item 
 static double \mbox{\hyperlink{classBerechnungRC_a2d8c883fa85f67bcc62343aaae9be346}{get\+Phasen\+Winkel}} (double p, double s)
-\begin{DoxyCompactList}\small\item\em get\+Phasen\+Winkel \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em get\+Phasen\+Winkel Methode \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classError}{Error}} \mbox{\hyperlink{classBerechnungRC_acc44278a44467e5119451fc3dc795f99}{error}}
-\begin{DoxyCompactList}\small\item\em error \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em error Methode \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Die \mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}} Klasse. 
 
--\/Serieschaltung aller Elemente -\/Alle Funktionen der Schaltung 
+Diese Klasse berechnet verschiedene Grössen aus den frei wählbaren Parametern u, f, r und c der seriellen R\+C-\/\+Schaltung. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classBerechnungRC_a25e89ed0cebb814d6f74a2abb1e6768a}\label{classBerechnungRC_a25e89ed0cebb814d6f74a2abb1e6768a}} 
@@ -72,9 +72,11 @@ Die \mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}} Klasse.
 
 \mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}} Konstrukteur. 
 
-Diese Methode erzeugt ein Objekt der Klasse \mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}}. 
+Diese Methode erzeugt ein Objekt der Klasse \mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}}.
+
+
 \begin{DoxyParams}{Parameters}
-{\em parent} & (Beschrieb mit Gull) \\
+{\em parent} & Gull??? \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classBerechnungRC_ab3700afd5d435b3b19123602ff996c07}\label{classBerechnungRC_ab3700afd5d435b3b19123602ff996c07}} 
@@ -87,7 +89,7 @@ Diese Methode erzeugt ein Objekt der Klasse \mbox{\hyperlink{classBerechnungRC}{
 
 $\sim$\+Berechnung\+RC Destrukteur 
 
-Diese Methode löscht ein erzeugtes Objekt der Klasse \mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}}. 
+Diese Methode löscht das erzeugte Objekt aus der Methode \mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}}. 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classBerechnungRC_aa95a57bc22b71a8b3c75217f2a90ab4b}\label{classBerechnungRC_aa95a57bc22b71a8b3c75217f2a90ab4b}} 
@@ -98,21 +100,22 @@ Diese Methode löscht ein erzeugtes Objekt der Klasse \mbox{\hyperlink{classBere
 
 
 
-get\+Blind\+Leistung 
+get\+Blind\+Leistung Methode 
 
-Beschrieb
+Diese Methode berechnet die Blindleistung aus den frei wählbaren Eingabeparametern f, c und dem berechneten Parameter i der gegebenen R\+C-\/\+Schaltung. Der Parameter i wird in der Methode \mbox{\hyperlink{classBerechnungRC_aab60c91154836e8df69a3c975072448c}{Berechnung\+R\+C\+::get\+Strom}} berechnet.
 
 
 \begin{DoxyParams}{Parameters}
-{\em f} & \\
+{\em f} & Gegebene Frequenz in Hertz. \\
 \hline
-{\em c} & \\
+{\em c} & Gegebene Kapazität in Farad. \\
 \hline
-{\em i} & \\
+{\em i} & Berechneter Strom aus Methode \mbox{\hyperlink{classBerechnungRC_aab60c91154836e8df69a3c975072448c}{Berechnung\+R\+C\+::get\+Strom}} in Ampere. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-
+Die Blindleistung wird anhand folgender Formel berechnet und zurückgegeben\+:~\newline
+\textbackslash{}begin\{equation\} \textbackslash{}frac\{1\}\{2$\ast$\textbackslash{}pi$\ast$f$\ast$c\}$\ast$i$^\wedge$2 \textbackslash{}end\{equation\} 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classBerechnungRC_a48ef55580608f8f2f942ffbc5640ec0f}\label{classBerechnungRC_a48ef55580608f8f2f942ffbc5640ec0f}} 
 \index{BerechnungRC@{BerechnungRC}!getImpedanz@{getImpedanz}}
@@ -122,9 +125,9 @@ Beschrieb
 
 
 
-get\+Impedanz 
+get\+Impedanz Methode 
 
-Diese Funktion berechnet die Gesamtimpedanz aus den frei wählbaren Eingabeparametern der gegebenen R\+C-\/\+Schaltung.
+Diese Methode berechnet die Impedanz aus den frei wählbaren Eingabeparametern r, f und c der gegebenen R\+C-\/\+Schaltung.
 
 
 \begin{DoxyParams}{Parameters}
@@ -132,11 +135,12 @@ Diese Funktion berechnet die Gesamtimpedanz aus den frei wählbaren Eingabeparam
 \hline
 {\em f} & Gegebene Frequenz in Hertz. \\
 \hline
-{\em c} & Gegebene Kapazität in Farrad. \\
+{\em c} & Gegebene Kapazität in Farad. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-/f\textbackslash{}sqrt\{ (x\+\_\+2-\/x\+\_\+1)$^\wedge$2 + (y\+\_\+2-\/y\+\_\+1)$^\wedge$2 \}/f 
+Die Gesamtimpedanz wird anhand folgender Formel berechnet und zurückgegeben\+:~\newline
+\textbackslash{}begin\{equation\} \textbackslash{}sqrt\{r$^\wedge$2+\textbackslash{}left(\textbackslash{}frac\{1\}\{2$\ast$\textbackslash{}pi$\ast$f$\ast$c\}\textbackslash{}right)$^\wedge$2\} \textbackslash{}end\{equation\} 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classBerechnungRC_aa2fbd4e295ce97921b1a4f712d270403}\label{classBerechnungRC_aa2fbd4e295ce97921b1a4f712d270403}} 
 \index{BerechnungRC@{BerechnungRC}!getLeistung@{getLeistung}}
@@ -146,19 +150,20 @@ Diese Funktion berechnet die Gesamtimpedanz aus den frei wählbaren Eingabeparam
 
 
 
-get\+Leistung 
+get\+Leistung Methode 
 
-Beschrieb
+Diese Methode berechnet die Leistung aus dem frei wählbaren Eingabeparameter r und dem berechneten Parameter i der gegebenen R\+C-\/\+Schaltung. Der Parameter i wird in der Methode \mbox{\hyperlink{classBerechnungRC_aab60c91154836e8df69a3c975072448c}{Berechnung\+R\+C\+::get\+Strom}} berechnet.
 
 
 \begin{DoxyParams}{Parameters}
-{\em r} & \\
+{\em r} & Gegebener Widerstand in Ohm. \\
 \hline
-{\em i} & \\
+{\em i} & Berechneter Strom aus Methode \mbox{\hyperlink{classBerechnungRC_aab60c91154836e8df69a3c975072448c}{Berechnung\+R\+C\+::get\+Strom}} in Ampere. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-
+Die Leistung wird anhand folgender Formel berechnet und zurückgegeben\+:~\newline
+\textbackslash{}begin\{equation\} r$\ast$i$^\wedge$2 \textbackslash{}end\{equation\} 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classBerechnungRC_a2d8c883fa85f67bcc62343aaae9be346}\label{classBerechnungRC_a2d8c883fa85f67bcc62343aaae9be346}} 
 \index{BerechnungRC@{BerechnungRC}!getPhasenWinkel@{getPhasenWinkel}}
@@ -168,19 +173,20 @@ Beschrieb
 
 
 
-get\+Phasen\+Winkel 
+get\+Phasen\+Winkel Methode 
 
-Beschrieb
+Diese Methode berechnet den Phasenwinkel aus den berechneten Parameter p und s der gegebenen R\+C-\/\+Schaltung. Der Parameter p wird in der Methode \mbox{\hyperlink{classBerechnungRC_aa2fbd4e295ce97921b1a4f712d270403}{Berechnung\+R\+C\+::get\+Leistung}} und der Parameter s in der Methode \mbox{\hyperlink{classBerechnungRC_a0cc7075977751218bbc13c2e41d6ce75}{Berechnung\+R\+C\+::get\+Schein\+Leistung}} berechnet.
 
 
 \begin{DoxyParams}{Parameters}
-{\em p} & \\
+{\em p} & Berechnete Leistung aus Methode \mbox{\hyperlink{classBerechnungRC_aa2fbd4e295ce97921b1a4f712d270403}{Berechnung\+R\+C\+::get\+Leistung}} in Watt. \\
 \hline
-{\em s} & \\
+{\em s} & Berechnete Scheinleistung aus Methode \mbox{\hyperlink{classBerechnungRC_a0cc7075977751218bbc13c2e41d6ce75}{Berechnung\+R\+C\+::get\+Schein\+Leistung}} in Voltampere. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-
+Der Phasenwinkel wird anhand folgender Formel berechnet und zurückgegeben\+:~\newline
+\textbackslash{}begin\{equation\} \textbackslash{}arccos\textbackslash{}left(\textbackslash{}frac\{p\}\{s\}$\ast$\textbackslash{}frac\{1\}\{2$\ast$\textbackslash{}pi\}\textbackslash{}right)$\ast$360 \textbackslash{}end\{equation\} 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classBerechnungRC_a0cc7075977751218bbc13c2e41d6ce75}\label{classBerechnungRC_a0cc7075977751218bbc13c2e41d6ce75}} 
 \index{BerechnungRC@{BerechnungRC}!getScheinLeistung@{getScheinLeistung}}
@@ -190,19 +196,20 @@ Beschrieb
 
 
 
-get\+Schein\+Leistung 
+get\+Schein\+Leistung Methode 
 
-Beschrieb
+Diese Methode berechnet die Scheinleistung aus dem frei wählbaren Eingabeparameter u und dem berechneten Parameter i der gegebenen R\+C-\/\+Schaltung. Der Parameter i wird in der Methode \mbox{\hyperlink{classBerechnungRC_aab60c91154836e8df69a3c975072448c}{Berechnung\+R\+C\+::get\+Strom}} berechnet.
 
 
 \begin{DoxyParams}{Parameters}
-{\em u} & \\
+{\em u} & Gegebene Spannung in Volt. \\
 \hline
-{\em i} & \\
+{\em i} & Berechneter Strom aus Methode \mbox{\hyperlink{classBerechnungRC_aab60c91154836e8df69a3c975072448c}{Berechnung\+R\+C\+::get\+Strom}} in Ampere. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-
+Die Scheinleistung wird anhand folgender Formel berechnet und zurückgegeben\+:~\newline
+\textbackslash{}begin\{equation\} u$\ast$i \textbackslash{}end\{equation\} 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classBerechnungRC_aab60c91154836e8df69a3c975072448c}\label{classBerechnungRC_aab60c91154836e8df69a3c975072448c}} 
 \index{BerechnungRC@{BerechnungRC}!getStrom@{getStrom}}
@@ -212,19 +219,20 @@ Beschrieb
 
 
 
-get\+Strom 
+get\+Strom Methode 
 
-Beschrieb
+Diese Methode berechnet den Strom aus dem frei wählbaren Eingabeparameter u und dem berechneten Parameter z der gegebenen R\+C-\/\+Schaltung. Der Parameter z wird in der Methode \mbox{\hyperlink{classBerechnungRC_a48ef55580608f8f2f942ffbc5640ec0f}{Berechnung\+R\+C\+::get\+Impedanz}} berechnet.
 
 
 \begin{DoxyParams}{Parameters}
-{\em u} & \\
+{\em u} & Gegebene Spannung in Volt. \\
 \hline
-{\em z} & \\
+{\em z} & Berechnete Impedanz aus Methode \mbox{\hyperlink{classBerechnungRC_a48ef55580608f8f2f942ffbc5640ec0f}{Berechnung\+R\+C\+::get\+Impedanz}} in Ohm. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-
+Der Strom wird anhand folgender Formel berechnet und zurückgegeben\+:~\newline
+\textbackslash{}begin\{equation\} \textbackslash{}frac\{u\}\{z\} \textbackslash{}end\{equation\} 
 \end{DoxyReturn}
 
 
@@ -237,9 +245,9 @@ Beschrieb
 
 
 
-error 
+error Methode 
 
-Beschrieb 
+Gull??? 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

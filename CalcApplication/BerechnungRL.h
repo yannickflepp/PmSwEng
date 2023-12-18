@@ -59,6 +59,7 @@ class BerechnungRL : public QWidget
     {
       error.show();
     }
+
     double z = getImpedanz(r, f, l);
     double i = getStrom(u, z);
     double p = getLeistung(r, i);

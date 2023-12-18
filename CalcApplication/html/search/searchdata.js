@@ -2,7 +2,7 @@ var indexSectionsWithContent =
 {
   0: "begm~",
   1: "bem",
-  2: "bg~",
+  2: "beg~",
   3: "e"
 };
 

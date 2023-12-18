@@ -17,8 +17,8 @@ QT_END_NAMESPACE
 /**
  * @brief Die BerechnungRC Klasse
  *
- * -Serieschaltung aller Elemente
- * -Alle Funktionen der Schaltung
+ * Diese Klasse berechnet verschiedene Grössen aus den frei wählbaren
+ * Parametern u, f, r und c der seriellen RC-Schaltung.
  */
 class BerechnungRC : public QWidget
 {
@@ -29,28 +29,32 @@ class BerechnungRC : public QWidget
    * @brief BerechnungRC Konstrukteur
    *
    * Diese Methode erzeugt ein Objekt der Klasse BerechnungRC.
-   * @param parent (Beschrieb mit Gull)
+   *
+   * @param parent Gull???
    */
   BerechnungRC(QWidget* parent = nullptr);
 
   /**
    * @brief ~BerechnungRC Destrukteur
    *
-   * Diese Methode löscht ein erzeugtes Objekt der Klasse BerechnungRC.
-   * */
+   * Diese Methode löscht das erzeugte Objekt aus der Methode BerechnungRC.
+   */
   ~BerechnungRC();
 
   /**
-   * @brief getImpedanz
+   * @brief getImpedanz Methode
    *
-   * Diese Funktion berechnet die Gesamtimpedanz aus den frei wählbaren
-   * Eingabeparametern der gegebenen RC-Schaltung.
+   * Diese Methode berechnet die Impedanz aus den frei wählbaren
+   * Eingabeparametern r, f und c der gegebenen RC-Schaltung.
    *
    * @param r Gegebener Widerstand in Ohm.
    * @param f Gegebene Frequenz in Hertz.
-   * @param c Gegebene Kapazität in Farrad.
+   * @param c Gegebene Kapazität in Farad.
    * @return Die Gesamtimpedanz wird anhand folgender Formel berechnet und
-   * zurückgegeben: /f\sqrt{ (x_2-x_1)^2 + (y_2-y_1)^2 }/f
+   * zurückgegeben:\n
+   * \begin{equation}
+   * \sqrt{r^2+\left(\frac{1}{2*\pi*f*c}\right)^2}
+   * \end{equation}
    */
   static double getImpedanz(double r, double f, double c)
   {
@@ -58,13 +62,20 @@ class BerechnungRC : public QWidget
   }
 
   /**
-   * @brief getStrom
+   * @brief getStrom Methode
    *
-   * Beschrieb ok
+   * Diese Methode berechnet den Strom aus dem frei wählbaren
+   * Eingabeparameter u und dem berechneten Parameter z der gegebenen
+   * RC-Schaltung. Der Parameter z wird in der Methode BerechnungRC::getImpedanz
+   * berechnet.
    *
-   * @param u
-   * @param z
-   * @return
+   * @param u Gegebene Spannung in Volt.
+   * @param z Berechnete Impedanz aus Methode BerechnungRC::getImpedanz in Ohm.
+   * @return Der Strom wird anhand folgender Formel berechnet und
+   * zurückgegeben:\n
+   * \begin{equation}
+   * \frac{u}{z}
+   * \end{equation}
    */
   static double getStrom(double u, double z)
   {
@@ -72,13 +83,20 @@ class BerechnungRC : public QWidget
   }
 
   /**
-   * @brief getLeistung
+   * @brief getLeistung Methode
    *
-   * Beschrieb
+   * Diese Methode berechnet die Leistung aus dem frei wählbaren
+   * Eingabeparameter r und dem berechneten Parameter i der gegebenen
+   * RC-Schaltung. Der Parameter i wird in der Methode BerechnungRC::getStrom
+   * berechnet.
    *
-   * @param r
-   * @param i
-   * @return
+   * @param r Gegebener Widerstand in Ohm.
+   * @param i Berechneter Strom aus Methode BerechnungRC::getStrom in Ampere.
+   * @return Die Leistung wird anhand folgender Formel berechnet und
+   * zurückgegeben:\n
+   * \begin{equation}
+   * r*i^2
+   * \end{equation}
    */
   static double getLeistung(double r, double i)
   {
@@ -86,14 +104,21 @@ class BerechnungRC : public QWidget
   }
 
   /**
-   * @brief getBlindLeistung
+   * @brief getBlindLeistung Methode
    *
-   * Beschrieb
+   * Diese Methode berechnet die Blindleistung aus den frei wählbaren
+   * Eingabeparametern f, c und dem berechneten Parameter i der gegebenen
+   * RC-Schaltung. Der Parameter i wird in der Methode BerechnungRC::getStrom
+   * berechnet.
    *
-   * @param f
-   * @param c
-   * @param i
-   * @return
+   * @param f Gegebene Frequenz in Hertz.
+   * @param c Gegebene Kapazität in Farad.
+   * @param i Berechneter Strom aus Methode BerechnungRC::getStrom in Ampere.
+   * @return Die Blindleistung wird anhand folgender Formel berechnet und
+   * zurückgegeben:\n
+   * \begin{equation}
+   * \frac{1}{2*\pi*f*c}*i^2
+   * \end{equation}
    */
   static double getBlindLeistung(double f, double c, double i)
   {
@@ -101,13 +126,20 @@ class BerechnungRC : public QWidget
   }
 
   /**
-   * @brief getScheinLeistung
+   * @brief getScheinLeistung Methode
    *
-   * Beschrieb
+   * Diese Methode berechnet die Scheinleistung aus dem frei wählbaren
+   * Eingabeparameter u und dem berechneten Parameter i der gegebenen
+   * RC-Schaltung. Der Parameter i wird in der Methode BerechnungRC::getStrom
+   * berechnet.
    *
-   * @param u
-   * @param i
-   * @return
+   * @param u Gegebene Spannung in Volt.
+   * @param i Berechneter Strom aus Methode BerechnungRC::getStrom in Ampere.
+   * @return Die Scheinleistung wird anhand folgender Formel berechnet und
+   * zurückgegeben:\n
+   * \begin{equation}
+   * u*i
+   * \end{equation}
    */
   static double getScheinLeistung(double u, double i)
   {
@@ -115,13 +147,21 @@ class BerechnungRC : public QWidget
   }
 
   /**
-   * @brief getPhasenWinkel
+   * @brief getPhasenWinkel Methode
    *
-   * Beschrieb
+   * Diese Methode berechnet den Phasenwinkel aus den berechneten Parameter p
+   * und s der gegebenen RC-Schaltung. Der Parameter p wird in der Methode
+   * BerechnungRC::getLeistung und der Parameter s in der Methode
+   * BerechnungRC::getScheinLeistung berechnet.
    *
-   * @param p
-   * @param s
-   * @return
+   * @param p Berechnete Leistung aus Methode BerechnungRC::getLeistung in Watt.
+   * @param s Berechnete Scheinleistung aus Methode
+   *        BerechnungRC::getScheinLeistung in Voltampere.
+   * @return Der Phasenwinkel wird anhand folgender Formel berechnet und
+   * zurückgegeben:\n
+   * \begin{equation}
+   * \arccos\left(\frac{p}{s}*\frac{1}{2*\pi}\right)*360
+   * \end{equation}
    */
   static double getPhasenWinkel(double p, double s)
   {
@@ -129,19 +169,14 @@ class BerechnungRC : public QWidget
   }
 
   /**
-   * @brief error
+   * @brief error Methode
    *
-   * Beschrieb
+   * Gull???
    */
   Error error;
 
  private slots:
-  /**
-   * @brief onPbPressed
-   *
-   * Beschrieb
-   */
-  void onPbPressed()
+  void onPbPressedRC()
   {
     bool ok = false;
     double u = (ui->spannungIn->text()).toDouble(&ok);
@@ -152,6 +187,7 @@ class BerechnungRC : public QWidget
     {
       error.show();
     }
+
     double z = getImpedanz(r, f, c);
     double i = getStrom(u, z);
     double p = getLeistung(r, i);
