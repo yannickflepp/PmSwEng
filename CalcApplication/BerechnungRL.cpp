@@ -7,7 +7,7 @@ BerechnungRL::BerechnungRL(QWidget* parent)
 {
   ui->setupUi(this);
   connect(ui->calculate, &QPushButton::pressed, this,
-          &BerechnungRL::onPbPressed);
+          &BerechnungRL::onPbPressedRL);
 }
 
 BerechnungRL::~BerechnungRL()
