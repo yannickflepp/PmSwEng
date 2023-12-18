@@ -23,7 +23,7 @@ class Error : public QWidget
 
  public:
   /**
-   * @brief Error Konstrukteur
+   * @brief Error Konstruktor
    *
    * Diese Methode erzeugt ein Objekt der Klasse Error.
    *
@@ -32,9 +32,9 @@ class Error : public QWidget
   Error(QWidget* parent = nullptr);
 
   /**
-   * @brief ~BerechnungRC Destrukteur
+   * @brief ~Error Destruktor
    *
-   * Diese Methode löscht das erzeugte Objekt aus der Methode Error.
+   * Diese Methode löscht das erzeugte Objekt aus der Methode Error::Error.
    */
   ~Error();
 

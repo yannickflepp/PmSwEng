@@ -2,7 +2,7 @@ var indexSectionsWithContent =
 {
   0: "begm~",
   1: "bem",
-  2: "beg~",
+  2: "begm~",
   3: "e"
 };
 
@@ -16,9 +16,9 @@ var indexSectionNames =
 
 var indexSectionLabels =
 {
-  0: "All",
-  1: "Classes",
-  2: "Functions",
-  3: "Variables"
+  0: "Alle",
+  1: "Klassen",
+  2: "Funktionen",
+  3: "Variablen"
 };
 

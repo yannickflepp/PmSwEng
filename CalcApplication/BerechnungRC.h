@@ -26,7 +26,7 @@ class BerechnungRC : public QWidget
 
  public:
   /**
-   * @brief BerechnungRC Konstrukteur
+   * @brief BerechnungRC Konstruktor
    *
    * Diese Methode erzeugt ein Objekt der Klasse BerechnungRC.
    *
@@ -35,9 +35,10 @@ class BerechnungRC : public QWidget
   BerechnungRC(QWidget* parent = nullptr);
 
   /**
-   * @brief ~BerechnungRC Destrukteur
+   * @brief ~BerechnungRC Destruktor
    *
-   * Diese Methode löscht das erzeugte Objekt aus der Methode BerechnungRC.
+   * Diese Methode löscht das erzeugte Objekt aus der Methode
+   * BerechnungRC::BerechnungRC.
    */
   ~BerechnungRC();
 
