@@ -27,7 +27,12 @@ var menudata={children:[
 {text:"Klassen-Verzeichnis",url:"classes.html"},
 {text:"Klassenhierarchie",url:"inherits.html"},
 {text:"Klassen-Elemente",url:"functions.html",children:[
-{text:"Alle",url:"functions.html"},
+{text:"Alle",url:"functions.html",children:[
+{text:"b",url:"functions.html#index_b"},
+{text:"e",url:"functions.html#index_e"},
+{text:"g",url:"functions.html#index_g"},
+{text:"m",url:"functions.html#index_m"},
+{text:"~",url:"functions.html#index__7E"}]},
 {text:"Funktionen",url:"functions_func.html"},
 {text:"Variablen",url:"functions_vars.html"}]}]},
 {text:"Dateien",url:"files.html",children:[

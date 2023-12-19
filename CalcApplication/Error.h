@@ -15,7 +15,8 @@ QT_END_NAMESPACE
 /**
  * @brief Die Error Klasse
  *
- * Diese Klasse
+ * Diese Klasse erzeugt ein Meldefenster bei ungültigen Eingabeparametern und
+ * unterbricht die Berechnungen.
  */
 class Error : public QWidget
 {
@@ -27,14 +28,15 @@ class Error : public QWidget
    *
    * Diese Methode erzeugt ein Objekt der Klasse Error.
    *
-   * @param parent Gull???
+   * @param parent Pointervariable
    */
   Error(QWidget* parent = nullptr);
 
   /**
    * @brief ~Error Destruktor
    *
-   * Diese Methode löscht das erzeugte Objekt aus der Methode Error::Error.
+   * Diese Methode ist der Standard Destruktor und löscht das erzeugte Objekt
+   * der Methode Error::Error.
    */
   ~Error();
 

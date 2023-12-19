@@ -49,19 +49,18 @@ void {\bfseries on\+Pb\+R\+L\+C\+Pressed} ()
 \doxysubsection*{Öffentliche Attribute}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classMainWindow_a063c14c52ef11f9eb2f46cb4e4645afc}\label{classMainWindow_a063c14c52ef11f9eb2f46cb4e4645afc}} 
-\mbox{\hyperlink{classBerechnungRL}{Berechnung\+RL}} {\bfseries berechnung\+RL}
-\item 
-\mbox{\Hypertarget{classMainWindow_a0d1eea157b3bb1b98a817087f875bd27}\label{classMainWindow_a0d1eea157b3bb1b98a817087f875bd27}} 
-\mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}} {\bfseries berechnung\+RC}
-\item 
-\mbox{\Hypertarget{classMainWindow_a50b37cd650a94828f9763a53ed2c154f}\label{classMainWindow_a50b37cd650a94828f9763a53ed2c154f}} 
-\mbox{\hyperlink{classBerechnungRLC}{Berechnung\+R\+LC}} {\bfseries berechnung\+R\+LC}
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classBerechnungRL}{Berechnung\+RL}} \mbox{\hyperlink{classMainWindow_a063c14c52ef11f9eb2f46cb4e4645afc}{berechnung\+RL}}
+\begin{DoxyCompactList}\small\item\em berechnung\+RL Konstruktor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}} \mbox{\hyperlink{classMainWindow_a0d1eea157b3bb1b98a817087f875bd27}{berechnung\+RC}}
+\begin{DoxyCompactList}\small\item\em berechnung\+RC Konstruktor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBerechnungRLC}{Berechnung\+R\+LC}} \mbox{\hyperlink{classMainWindow_a50b37cd650a94828f9763a53ed2c154f}{berechnung\+R\+LC}}
+\begin{DoxyCompactList}\small\item\em berechnung\+R\+LC Konstruktor \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Ausführliche Beschreibung}
 Die \mbox{\hyperlink{classMainWindow}{Main\+Window}} Klasse. 
+
+Diese Klasse erzeugt Objekte der drei Unterklassen \mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}}, \mbox{\hyperlink{classBerechnungRL}{Berechnung\+RL}} und \mbox{\hyperlink{classBerechnungRLC}{Berechnung\+R\+LC}} beim Aufruf der jeweiligen Objekte. 
 
 \doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
 \mbox{\Hypertarget{classMainWindow_a996c5a2b6f77944776856f08ec30858d}\label{classMainWindow_a996c5a2b6f77944776856f08ec30858d}} 
@@ -78,7 +77,7 @@ Diese Methode erzeugt ein Objekt der Klasse \mbox{\hyperlink{classMainWindow}{Ma
 
 
 \begin{DoxyParams}{Parameter}
-{\em parent} & Gull??? \\
+{\em parent} & Pointervariable \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}\label{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}} 
@@ -91,7 +90,40 @@ Diese Methode erzeugt ein Objekt der Klasse \mbox{\hyperlink{classMainWindow}{Ma
 
 $\sim$\+Main\+Window Destruktor 
 
-Diese Methode löscht das erzeugte Objekt aus der Methode \mbox{\hyperlink{classMainWindow_a996c5a2b6f77944776856f08ec30858d}{Main\+Window\+::\+Main\+Window}}. 
+Diese Methode ist der Standard Destruktor und löscht das erzeugte Objekt der Methode \mbox{\hyperlink{classMainWindow_a996c5a2b6f77944776856f08ec30858d}{Main\+Window\+::\+Main\+Window}}. 
+
+\doxysubsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{classMainWindow_a0d1eea157b3bb1b98a817087f875bd27}\label{classMainWindow_a0d1eea157b3bb1b98a817087f875bd27}} 
+\index{MainWindow@{MainWindow}!berechnungRC@{berechnungRC}}
+\index{berechnungRC@{berechnungRC}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{berechnungRC}{berechnungRC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}} Main\+Window\+::berechnung\+RC}
+
+
+
+berechnung\+RC Konstruktor 
+
+Diese Methode erzeugt ein Objekt der Klasse \mbox{\hyperlink{classBerechnungRC}{Berechnung\+RC}}. \mbox{\Hypertarget{classMainWindow_a063c14c52ef11f9eb2f46cb4e4645afc}\label{classMainWindow_a063c14c52ef11f9eb2f46cb4e4645afc}} 
+\index{MainWindow@{MainWindow}!berechnungRL@{berechnungRL}}
+\index{berechnungRL@{berechnungRL}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{berechnungRL}{berechnungRL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBerechnungRL}{Berechnung\+RL}} Main\+Window\+::berechnung\+RL}
+
+
+
+berechnung\+RL Konstruktor 
+
+Diese Methode erzeugt ein Objekt der Klasse \mbox{\hyperlink{classBerechnungRL}{Berechnung\+RL}}. \mbox{\Hypertarget{classMainWindow_a50b37cd650a94828f9763a53ed2c154f}\label{classMainWindow_a50b37cd650a94828f9763a53ed2c154f}} 
+\index{MainWindow@{MainWindow}!berechnungRLC@{berechnungRLC}}
+\index{berechnungRLC@{berechnungRLC}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{berechnungRLC}{berechnungRLC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBerechnungRLC}{Berechnung\+R\+LC}} Main\+Window\+::berechnung\+R\+LC}
+
+
+
+berechnung\+R\+LC Konstruktor 
+
+Diese Methode erzeugt ein Objekt der Klasse \mbox{\hyperlink{classBerechnungRLC}{Berechnung\+R\+LC}}. 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
 \item 

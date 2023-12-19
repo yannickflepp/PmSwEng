@@ -30,15 +30,15 @@ class BerechnungRC : public QWidget
    *
    * Diese Methode erzeugt ein Objekt der Klasse BerechnungRC.
    *
-   * @param parent Gull???
+   * @param parent Pointervariable
    */
   BerechnungRC(QWidget* parent = nullptr);
 
   /**
    * @brief ~BerechnungRC Destruktor
    *
-   * Diese Methode löscht das erzeugte Objekt aus der Methode
-   * BerechnungRC::BerechnungRC.
+   * Diese Methode ist der Standard Destruktor und löscht das erzeugte Objekt
+   * der Methode BerechnungRC::BerechnungRC.
    */
   ~BerechnungRC();
 
@@ -170,9 +170,9 @@ class BerechnungRC : public QWidget
   }
 
   /**
-   * @brief error Methode
+   * @brief error Objekt
    *
-   * Gull???
+   * Dieser Codeabschnitt erzeugt ein Objekt der Klasse Error::Error.
    */
   Error error;
 
