@@ -55,13 +55,13 @@ static double \mbox{\hyperlink{classBerechnungRLC_a1622c60b3a0390fd1a3b204feee6f
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classError}{Error}} \mbox{\hyperlink{classBerechnungRLC_a6e2e1195ddca6bbe5fada3135d275f90}{error}}
-\begin{DoxyCompactList}\small\item\em error Objekt \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em error Attribut \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Ausführliche Beschreibung}
 Die \mbox{\hyperlink{classBerechnungRLC}{Berechnung\+R\+LC}} Klasse. 
 
-Diese Klasse berechnet verschiedene Grössen aus den frei wählbaren Parametern u, f, r, c und l der seriellen R\+L\+C-\/\+Schaltung. 
+Diese Klasse berechnet verschiedene Grössen aus den frei wählbaren Parametern u, f, r, l und c der seriellen R\+L\+C-\/\+Schaltung. 
 
 \doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
 \mbox{\Hypertarget{classBerechnungRLC_a6fc69e1d3db047dcab3c31a13bdcde0c}\label{classBerechnungRLC_a6fc69e1d3db047dcab3c31a13bdcde0c}} 
@@ -140,7 +140,7 @@ Diese Methode berechnet den Blindwiderstand aus den frei wählbaren Eingangspara
 \end{DoxyParams}
 \begin{DoxyReturn}{Rückgabe}
 Der Blindwiderstand wird anhand folgender Formel berechnet und zurückgegeben\+:~\newline
-\textbackslash{}begin\{equation\} \textbackslash{}left(2$\ast$\textbackslash{}pi$\ast$f$\ast$l\textbackslash{}right)-\/\textbackslash{}left(\textbackslash{}frac\{1\}\{2$\ast$\textbackslash{}pi$\ast$f$\ast$c\}\textbackslash{}right) \textbackslash{}end\{equation\} 
+\textbackslash{}begin\{equation\} 2$\ast$\textbackslash{}pi$\ast$f$\ast$l-\/\textbackslash{}frac\{1\}\{2$\ast$\textbackslash{}pi$\ast$f$\ast$c\} \textbackslash{}end\{equation\} 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classBerechnungRLC_af13d00aad11c2b62218193b0632df51a}\label{classBerechnungRLC_af13d00aad11c2b62218193b0632df51a}} 
 \index{BerechnungRLC@{BerechnungRLC}!getImpedanz@{getImpedanz}}
@@ -162,7 +162,7 @@ Diese Methode berechnet die Impedanz aus dem frei wählbaren Eingabeparameter r 
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Rückgabe}
-Die Gesamtimpedanz wird anhand folgender Formel berechnet und zurückgegeben\+:~\newline
+Die Impedanz wird anhand folgender Formel berechnet und zurückgegeben\+:~\newline
 \textbackslash{}begin\{equation\} \textbackslash{}sqrt\{r$^\wedge$2+x$^\wedge$2\} \textbackslash{}end\{equation\} 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classBerechnungRLC_a94428ed96e0354c5f34ba38417a4cc15}\label{classBerechnungRLC_a94428ed96e0354c5f34ba38417a4cc15}} 
@@ -198,7 +198,7 @@ Die Leistung wird anhand folgender Formel berechnet und zurückgegeben\+:~\newli
 
 get\+Phasen\+Winkel Methode 
 
-Diese Methode berechnet den Phasenwinkel aus den berechneten Parameter p und s der gegebenen R\+L\+C-\/\+Schaltung. Der Parameter p wird in der Methode \mbox{\hyperlink{classBerechnungRLC_a94428ed96e0354c5f34ba38417a4cc15}{Berechnung\+R\+L\+C\+::get\+Leistung}} und der Parameter s in der Methode \mbox{\hyperlink{classBerechnungRLC_a63e916b7a082aa6dc0f1df99b2edfd4d}{Berechnung\+R\+L\+C\+::get\+Schein\+Leistung}} berechnet.
+Diese Methode berechnet den Phasenwinkel aus den berechneten Parametern p und s der gegebenen R\+L\+C-\/\+Schaltung. Der Parameter p wird in der Methode \mbox{\hyperlink{classBerechnungRLC_a94428ed96e0354c5f34ba38417a4cc15}{Berechnung\+R\+L\+C\+::get\+Leistung}} und der Parameter s in der Methode \mbox{\hyperlink{classBerechnungRLC_a63e916b7a082aa6dc0f1df99b2edfd4d}{Berechnung\+R\+L\+C\+::get\+Schein\+Leistung}} berechnet.
 
 
 \begin{DoxyParams}{Parameter}
@@ -268,9 +268,9 @@ Der Strom wird anhand folgender Formel berechnet und zurückgegeben\+:~\newline
 
 
 
-error Objekt 
+error Attribut 
 
-Dieser Codeabschnitt erzeugt ein Objekt der Klasse \mbox{\hyperlink{classError_adfd0d43a4faa8bd21c328d47e725d6c1}{Error\+::\+Error}}. 
+Dieser Codeabschnitt erzeugt ein Attribut der Klasse \mbox{\hyperlink{classError_adfd0d43a4faa8bd21c328d47e725d6c1}{Error\+::\+Error}}. 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
 \item 

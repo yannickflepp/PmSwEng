@@ -51,7 +51,7 @@ class BerechnungRL : public QWidget
    * @param r Gegebener Widerstand in Ohm.
    * @param f Gegebene Frequenz in Hertz.
    * @param l Gegebene Induktivität in Henry.
-   * @return Die Gesamtimpedanz wird anhand folgender Formel berechnet und
+   * @return Die Impedanz wird anhand folgender Formel berechnet und
    * zurückgegeben:\n
    * \begin{equation}
    * \sqrt{r^2+\left(2*\pi*f*l\right)^2}
@@ -150,7 +150,7 @@ class BerechnungRL : public QWidget
   /**
    * @brief getPhasenWinkel Methode
    *
-   * Diese Methode berechnet den Phasenwinkel aus den berechneten Parameter p
+   * Diese Methode berechnet den Phasenwinkel aus den berechneten Parametern p
    * und s der gegebenen RL-Schaltung. Der Parameter p wird in der Methode
    * BerechnungRL::getLeistung und der Parameter s in der Methode
    * BerechnungRL::getScheinLeistung berechnet.
@@ -170,9 +170,9 @@ class BerechnungRL : public QWidget
   }
 
   /**
-   * @brief error Objekt
+   * @brief error Attribut
    *
-   * Dieser Codeabschnitt erzeugt ein Objekt der Klasse Error::Error.
+   * Dieser Codeabschnitt erzeugt ein Attribut der Klasse Error::Error.
    */
   Error error;
 

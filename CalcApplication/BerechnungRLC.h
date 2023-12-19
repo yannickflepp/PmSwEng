@@ -18,7 +18,7 @@ QT_END_NAMESPACE
  * @brief Die BerechnungRLC Klasse
  *
  * Diese Klasse berechnet verschiedene Grössen aus den frei wählbaren
- * Parametern u, f, r, c und l der seriellen RLC-Schaltung.
+ * Parametern u, f, r, l und c der seriellen RLC-Schaltung.
  */
 class BerechnungRLC : public QWidget
 {
@@ -54,7 +54,7 @@ class BerechnungRLC : public QWidget
    * @return Der Blindwiderstand wird anhand folgender Formel berechnet und
    * zurückgegeben:\n
    * \begin{equation}
-   * \left(2*\pi*f*l\right)-\left(\frac{1}{2*\pi*f*c}\right)
+   * 2*\pi*f*l-\frac{1}{2*\pi*f*c}
    * \end{equation}
    */
   static double getBlindwiderstand(double f, double l, double c)
@@ -78,7 +78,7 @@ class BerechnungRLC : public QWidget
    * @param r Gegebener Widerstand in Ohm.
    * @param x Berechneter Blindwiderstand aus Methode
    *        BerechnungRLC::getBlindwiderstand in Ohm.
-   * @return Die Gesamtimpedanz wird anhand folgender Formel berechnet und
+   * @return Die Impedanz wird anhand folgender Formel berechnet und
    * zurückgegeben:\n
    * \begin{equation}
    * \sqrt{r^2+x^2}
@@ -177,7 +177,7 @@ class BerechnungRLC : public QWidget
   /**
    * @brief getPhasenWinkel Methode
    *
-   * Diese Methode berechnet den Phasenwinkel aus den berechneten Parameter p
+   * Diese Methode berechnet den Phasenwinkel aus den berechneten Parametern p
    * und s der gegebenen RLC-Schaltung. Der Parameter p wird in der Methode
    * BerechnungRLC::getLeistung und der Parameter s in der Methode
    * BerechnungRLC::getScheinLeistung berechnet.
@@ -198,9 +198,9 @@ class BerechnungRLC : public QWidget
   }
 
   /**
-   * @brief error Objekt
+   * @brief error Attribut
    *
-   * Dieser Codeabschnitt erzeugt ein Objekt der Klasse Error::Error.
+   * Dieser Codeabschnitt erzeugt ein Attribut der Klasse Error::Error.
    */
   Error error;
 
