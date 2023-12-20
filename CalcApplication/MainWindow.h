@@ -13,16 +13,55 @@ class MainWindow;
 }
 QT_END_NAMESPACE
 
+/**
+ * @brief Die MainWindow Klasse
+ *
+ * Diese Klasse erzeugt Objekte der drei Unterklassen BerechnungRC, BerechnungRL
+ * und BerechnungRLC beim Aufruf der jeweiligen Objekte.
+ */
 class MainWindow : public QMainWindow
 {
   Q_OBJECT
 
  public:
+  /**
+   * @brief MainWindow Konstruktor
+   *
+   * Diese Methode erzeugt ein Objekt der Klasse MainWindow.
+   *
+   * @param parent Pointervariable
+   */
   MainWindow(QWidget* parent = nullptr);
+
+  /**
+   * @brief ~MainWindow Destruktor
+   *
+   * Diese Methode ist der Standard Destruktor und löscht das erzeugte Objekt
+   * der Methode MainWindow::MainWindow.
+   */
   ~MainWindow();
+
+  /**
+   * @brief berechnungRL Konstruktor
+   *
+   * Diese Methode erzeugt ein Objekt der Klasse BerechnungRL.
+   */
   BerechnungRL berechnungRL;
+
+  /**
+   * @brief berechnungRC Konstruktor
+   *
+   * Diese Methode erzeugt ein Objekt der Klasse BerechnungRC.
+   */
   BerechnungRC berechnungRC;
+
+  /**
+   * @brief berechnungRLC Konstruktor
+   *
+   * Diese Methode erzeugt ein Objekt der Klasse BerechnungRLC.
+   */
   BerechnungRLC berechnungRLC;
+
  public slots:
   void onPbRLPressed()
   {

@@ -21,10 +21,19 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"Main Page",url:"index.html"},
-{text:"Classes",url:"annotated.html",children:[
-{text:"Class List",url:"annotated.html"},
-{text:"Class Index",url:"classes.html"},
-{text:"Class Hierarchy",url:"inherits.html"}]},
-{text:"Files",url:"files.html",children:[
-{text:"File List",url:"files.html"}]}]}
+{text:"Hauptseite",url:"index.html"},
+{text:"Klassen",url:"annotated.html",children:[
+{text:"Auflistung der Klassen",url:"annotated.html"},
+{text:"Klassen-Verzeichnis",url:"classes.html"},
+{text:"Klassenhierarchie",url:"inherits.html"},
+{text:"Klassen-Elemente",url:"functions.html",children:[
+{text:"Alle",url:"functions.html",children:[
+{text:"b",url:"functions.html#index_b"},
+{text:"e",url:"functions.html#index_e"},
+{text:"g",url:"functions.html#index_g"},
+{text:"m",url:"functions.html#index_m"},
+{text:"~",url:"functions.html#index__7E"}]},
+{text:"Funktionen",url:"functions_func.html"},
+{text:"Variablen",url:"functions_vars.html"}]}]},
+{text:"Dateien",url:"files.html",children:[
+{text:"Auflistung der Dateien",url:"files.html"}]}]}
