@@ -18,7 +18,7 @@ QT_END_NAMESPACE
  * @brief Die BerechnungRC Klasse
  *
  * Diese Klasse berechnet verschiedene Grössen aus den frei wählbaren
- * Parametern u, f, r und c der seriellen RC-Schaltung.
+ * Parameter u, f, r und c der seriellen RC-Schaltung.
  */
 class BerechnungRC : public QWidget
 {
